@@ -7,15 +7,15 @@ const faqs = [
     questions: [
       {
         q: "Where do you ship from?",
-        a: "We ship internationally from Singapore. All orders are processed within 1-2 business days."
+        a: "We ship internationally from the USA. All orders are processed within 1-2 business days."
       },
       {
         q: "How long does shipping take?",
-        a: "Delivery times vary by country. Standard shipping typically takes 7-14 business days. Express options are available at checkout for faster delivery (3-5 business days)."
+        a: "Delivery times vary by location. Standard shipping typically takes 5-7 business days within the US, 7-14 days internationally. Express options are available at checkout."
       },
       {
         q: "Is shipping free?",
-        a: "Yes! We offer free tracked shipping on all orders over $100 USD. Orders under $100 have a flat rate of $25 USD."
+        a: "Yes! We offer free tracked shipping on all orders over $100 USD. Orders under $100 have a flat rate of $9.99 USD."
       },
       {
         q: "Do you provide tracking?",
@@ -28,15 +28,15 @@ const faqs = [
     questions: [
       {
         q: "What size should I get?",
-        a: "Our shirts run true to size with an athletic fit. If you prefer a looser fit, we recommend sizing up. Check our Size Guide for detailed measurements."
+        a: "Our compression gear runs true to size with an athletic, competition-ready fit. If you prefer a slightly looser fit for training, we recommend sizing up. Check our Size Guide for detailed measurements."
       },
       {
-        q: "Are the shirts unisex?",
-        a: "Yes, our Performance T-Shirts are designed with a unisex fit that works for all body types."
+        q: "Is this gear designed for specific weight classes?",
+        a: "Our compression shirts and shorts work great for all weight classes. The stretchy, durable fabric accommodates bodies of all sizes while maintaining its shape."
       },
       {
         q: "What about shorts sizing?",
-        a: "Our Performance Shorts come in both Men's and Women's sizing for the best fit. Size charts are available on each product page."
+        a: "Our Wrestling Shorts come in both Men's and Women's sizing for the best fit. Size charts are available on each product page."
       }
     ]
   },
@@ -53,7 +53,7 @@ const faqs = [
       },
       {
         q: "How do I start a return?",
-        a: "Email us at support@razetraining.com with your order number and reason for return. We'll send you return instructions within 24 hours."
+        a: "Email us at support@apexwrestling.com with your order number and reason for return. We'll send you return instructions within 24 hours."
       }
     ]
   },
@@ -61,16 +61,16 @@ const faqs = [
     category: "Product & Care",
     questions: [
       {
-        q: "What material are the shirts made of?",
-        a: "Our Performance T-Shirts are made from lightweight, sweat-wicking fabric engineered for high-output training sessions. They hold structure and fit after repeated washes."
+        q: "What material are the compression shirts made of?",
+        a: "Our Compression Shirts are made from battle-tested, abrasion-resistant fabric engineered for intense mat sessions. They maintain structure and fit after hundreds of washes."
       },
       {
         q: "How do I wash the products?",
-        a: "Machine wash cold with like colors. Tumble dry low or hang dry. Do not bleach or iron directly on prints."
+        a: "Machine wash cold with like colors. Tumble dry low or hang dry. Do not bleach or iron directly on prints. Our gear is designed to withstand the rigors of wrestling training."
       },
       {
-        q: "Are the products squat/deadlift proof?",
-        a: "Absolutely. Our athletic cut is designed to stay in place under tension — perfect for overhead movements, inversions, and full-range exercises."
+        q: "Will the gear hold up during live wrestling?",
+        a: "Absolutely. Our compression gear is specifically designed for wrestling and combat sports. Reinforced seams and grip-resistant fabric ensure it stays in place during takedowns, scrambles, and intense grappling."
       }
     ]
   },
@@ -86,8 +86,8 @@ const faqs = [
         a: "Orders can be modified or cancelled within 2 hours of placing them. After that, they enter processing. Contact us immediately if you need changes."
       },
       {
-        q: "I didn't receive an order confirmation?",
-        a: "Check your spam folder first. If you still don't see it, contact us with your email and we'll resend the confirmation."
+        q: "Do you offer team/bulk discounts?",
+        a: "Yes! We offer special pricing for wrestling teams, clubs, and coaches. Contact us at teams@apexwrestling.com for bulk order inquiries."
       }
     ]
   }

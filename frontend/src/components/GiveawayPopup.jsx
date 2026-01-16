@@ -6,8 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const API_URL = process.env.REACT_APP_BACKEND_URL;
 
-// RAZE Logo URL
-const RAZE_LOGO = '/images/popup_logo_cyan.png';
+// APEX Logo (text-based since we don't have a logo image)
 
 const GiveawayPopup = () => {
   const { t } = useTranslation();

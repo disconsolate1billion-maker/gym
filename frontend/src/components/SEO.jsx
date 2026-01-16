@@ -6,20 +6,20 @@ import { useLocation } from 'react-router-dom';
  * Improves search engine rankings and social sharing
  */
 const SEO = ({ 
-  title = 'RAZE Training', 
-  description = 'Premium athletic wear designed by gymnasts, for gymnasts.',
-  image = '/images/products/front_shirt_black_cyan.png',
+  title = 'APEX Wrestling', 
+  description = 'Premium compression gear designed by NCAA wrestlers, for combat athletes.',
+  image = 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80',
   type = 'website',
   product = null
 }) => {
   const location = useLocation();
-  const baseUrl = 'https://razetraining.com';
+  const baseUrl = 'https://apexwrestling.com';
   const fullUrl = `${baseUrl}${location.pathname}`;
   const fullImage = image.startsWith('http') ? image : `${baseUrl}${image}`;
   
   useEffect(() => {
     // Update title
-    document.title = title.includes('RAZE') ? title : `${title} | RAZE Training`;
+    document.title = title.includes('APEX') ? title : `${title} | APEX Wrestling`;
     
     // Helper to update or create meta tag
     const updateMeta = (property, content, isName = false) => {
@@ -70,7 +70,7 @@ const SEO = ({
         "description": product.description,
         "brand": {
           "@type": "Brand",
-          "name": "RAZE Training"
+          "name": "APEX Wrestling"
         },
         "offers": {
           "@type": "Offer",
@@ -97,44 +97,44 @@ const SEO = ({
 export const PageSEO = {
   home: () => (
     <SEO 
-      title="RAZE Training - Performance Gear for Gymnasts | Built by Discipline"
-      description="Premium athletic wear designed by gymnasts, for gymnasts. Engineered for peak performance in MAG & WAG training. Shop the collection."
+      title="APEX Wrestling - Elite Compression Gear for Combat Athletes | Forged in the Fire"
+      description="Premium compression gear designed by NCAA wrestlers, for combat athletes. Built to endure grueling practices and dominate on the mat."
     />
   ),
   
   products: () => (
     <SEO 
-      title="Shop Collection - Performance T-Shirts | RAZE Training"
-      description="Browse our collection of premium performance t-shirts. Engineered for gymnastics training with moisture-wicking, breathable fabric."
-      image="/images/products/front_shirt_black_cyan.png"
+      title="Shop Collection - Compression Gear | APEX Wrestling"
+      description="Browse our collection of elite compression shirts and wrestling shorts. Engineered for combat athletes with battle-tested durability."
+      image="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80"
     />
   ),
   
   about: () => (
     <SEO 
-      title="About RAZE - Built by Gymnasts, for Gymnasts"
-      description="RAZE Training was founded by competitive gymnasts who understand what athletes need. Our mission is to create the perfect training gear."
+      title="About APEX - Forged by Wrestlers, for Combat Athletes"
+      description="APEX Wrestling was founded by NCAA wrestlers who understand what combat athletes need. Our mission is to create battle-tested gear."
     />
   ),
   
   cart: () => (
     <SEO 
-      title="Your Cart | RAZE Training"
-      description="Review your RAZE Training cart and checkout. Free shipping on orders over $100."
+      title="Your Cart | APEX Wrestling"
+      description="Review your APEX Wrestling cart and checkout. Free shipping on orders over $100."
     />
   ),
   
   checkout: () => (
     <SEO 
-      title="Checkout | RAZE Training"
-      description="Complete your RAZE Training order. Secure checkout with multiple payment options."
+      title="Checkout | APEX Wrestling"
+      description="Complete your APEX Wrestling order. Secure checkout with multiple payment options."
     />
   ),
   
   product: (product) => (
     <SEO 
-      title={`${product.name} - ${product.color} | RAZE Training`}
-      description={`${product.name} in ${product.color}. ${product.description || 'Premium performance wear for gymnasts.'}`}
+      title={`${product.name} - ${product.color} | APEX Wrestling`}
+      description={`${product.name} in ${product.color}. ${product.description || 'Elite compression gear for combat athletes.'}`}
       image={product.image}
       type="product"
       product={{

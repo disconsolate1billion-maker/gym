@@ -110,14 +110,14 @@ const Contact = () => {
               <MessageSquare size={24} />
               <h3>Customer Support</h3>
               <p>For order inquiries and general questions</p>
-              <a href="mailto:support@razetraining.com">support@razetraining.com</a>
+              <a href="mailto:support@apexwrestling.com">support@apexwrestling.com</a>
             </div>
 
             <div className="contact-info-card">
               <MapPin size={24} />
               <h3>Headquarters</h3>
-              <p>RAZE Training</p>
-              <p>Los Angeles, CA</p>
+              <p>APEX Wrestling</p>
+              <p>Columbus, OH</p>
               <p>United States</p>
             </div>
 

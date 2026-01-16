@@ -38,7 +38,7 @@ const Reviews = () => {
             <div key={review.id} className="review-card">
               <div className="review-stars">
                 {[...Array(review.rating)].map((_, i) => (
-                  <span key={i} className="star">\u2605</span>
+                  <span key={i} className="star">★</span>
                 ))}
               </div>
               <p className="review-text">"{review.text}"</p>

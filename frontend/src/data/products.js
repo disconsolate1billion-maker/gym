@@ -16,7 +16,7 @@ export const products = [
     variant: 'Navy',
     description: 'Compression shirt for wrestling training.',
     price: 55,
-    images: ['https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&q=80'],
+    images: ['https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=600&q=80'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shirts'
@@ -27,7 +27,7 @@ export const products = [
     variant: 'Grey',
     description: 'Compression shirt for wrestling training.',
     price: 55,
-    images: ['https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&q=80'],
+    images: ['https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=600&q=80'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shirts'
@@ -46,10 +46,10 @@ export const products = [
   {
     id: 5,
     name: 'Training Shorts',
-    variant: 'Navy',
+    variant: 'Grey',
     description: 'Training shorts for wrestling and gym.',
     price: 45,
-    images: ['https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80'],
+    images: ['https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=600&q=80'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shorts'

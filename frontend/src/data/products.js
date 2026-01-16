@@ -27,7 +27,7 @@ export const products = [
     variant: 'Grey',
     description: 'Moisture-wicking compression shirt for training.',
     price: 45,
-    images: ['https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg?auto=compress&cs=tinysrgb&w=600'],
+    images: ['https://images.pexels.com/photos/5325104/pexels-photo-5325104.jpeg?auto=compress&cs=tinysrgb&w=600'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shirts'
@@ -38,7 +38,7 @@ export const products = [
     variant: 'Black',
     description: 'Lightweight training shorts with stretch fabric.',
     price: 40,
-    images: ['https://images.pexels.com/photos/6311587/pexels-photo-6311587.jpeg?auto=compress&cs=tinysrgb&w=600'],
+    images: ['https://images.pexels.com/photos/6740748/pexels-photo-6740748.jpeg?auto=compress&cs=tinysrgb&w=600'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shorts'
@@ -49,7 +49,7 @@ export const products = [
     variant: 'Navy',
     description: 'Lightweight training shorts with stretch fabric.',
     price: 40,
-    images: ['https://images.pexels.com/photos/6311475/pexels-photo-6311475.jpeg?auto=compress&cs=tinysrgb&w=600'],
+    images: ['https://images.pexels.com/photos/6740823/pexels-photo-6740823.jpeg?auto=compress&cs=tinysrgb&w=600'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shorts'
@@ -60,7 +60,7 @@ export const products = [
     variant: 'Grey',
     description: 'Lightweight training shorts with stretch fabric.',
     price: 40,
-    images: ['https://images.pexels.com/photos/6311567/pexels-photo-6311567.jpeg?auto=compress&cs=tinysrgb&w=600'],
+    images: ['https://images.pexels.com/photos/6740756/pexels-photo-6740756.jpeg?auto=compress&cs=tinysrgb&w=600'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shorts'

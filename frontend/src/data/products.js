@@ -5,7 +5,7 @@ export const products = [
     variant: 'Black',
     description: 'Compression shirt for wrestling training.',
     price: 55,
-    images: ['https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80'],
+    images: ['https://placehold.co/400x400/1a1a1a/ffffff?text=Compression+Shirt'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shirts'
@@ -16,7 +16,7 @@ export const products = [
     variant: 'Navy',
     description: 'Compression shirt for wrestling training.',
     price: 55,
-    images: ['https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=600&q=80'],
+    images: ['https://placehold.co/400x400/1e3a5f/ffffff?text=Compression+Shirt'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shirts'
@@ -27,7 +27,7 @@ export const products = [
     variant: 'Grey',
     description: 'Compression shirt for wrestling training.',
     price: 55,
-    images: ['https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=600&q=80'],
+    images: ['https://placehold.co/400x400/4a4a4a/ffffff?text=Compression+Shirt'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shirts'
@@ -38,7 +38,7 @@ export const products = [
     variant: 'Black',
     description: 'Training shorts for wrestling and gym.',
     price: 45,
-    images: ['https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=600&q=80'],
+    images: ['https://placehold.co/400x400/1a1a1a/ffffff?text=Training+Shorts'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shorts'
@@ -49,7 +49,7 @@ export const products = [
     variant: 'Grey',
     description: 'Training shorts for wrestling and gym.',
     price: 45,
-    images: ['https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=600&q=80'],
+    images: ['https://placehold.co/400x400/4a4a4a/ffffff?text=Training+Shorts'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shorts'

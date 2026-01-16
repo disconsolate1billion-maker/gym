@@ -542,7 +542,7 @@ html.modal-open {
   }
 }
 
-/* RAZE E-Commerce Styles — Disciplined, Engineered, Premium */
+/* APEX E-Commerce Styles — Forged in the Fire, Built to Dominate */
 
 /* ========================================
    CSS VARIABLES
@@ -555,11 +555,11 @@ html.modal-open {
   --text-primary: #ffffff;
   --text-secondary: #b4b4b4;
   --text-muted: #6b6b6b;
-  --brand-primary: #00D9FF;
-  --brand-secondary: #0099ff;
-  --brand-gradient: linear-gradient(135deg, #00D9FF 0%, #0099ff 100%);
-  --accent-cyan: #00ffff;
-  --accent-purple: #a855f7;
+  --brand-primary: #DC2626;
+  --brand-secondary: #D4AF37;
+  --brand-gradient: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+  --accent-cyan: #D4AF37;
+  --accent-purple: #DC2626;
   --success: #10b981;
   --warning: #f59e0b;
   --error: #ef4444;
@@ -569,7 +569,7 @@ html.modal-open {
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.6);
-  --shadow-glow: 0 0 30px rgba(0, 217, 255, 0.15);
+  --shadow-glow: 0 0 30px rgba(220, 38, 38, 0.15);
 }
 
 /* ========================================

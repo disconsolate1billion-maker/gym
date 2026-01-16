@@ -38,7 +38,7 @@ export const products = [
     variant: 'Black',
     description: 'Lightweight training shorts with stretch fabric.',
     price: 40,
-    images: ['https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=600&q=80'],
+    images: ['https://images.pexels.com/photos/3490348/pexels-photo-3490348.jpeg?auto=compress&cs=tinysrgb&w=600'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shorts'
@@ -49,7 +49,7 @@ export const products = [
     variant: 'Grey',
     description: 'Lightweight training shorts with stretch fabric.',
     price: 40,
-    images: ['https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&q=80'],
+    images: ['https://images.pexels.com/photos/3490363/pexels-photo-3490363.jpeg?auto=compress&cs=tinysrgb&w=600'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shorts'
@@ -60,7 +60,7 @@ export const products = [
     variant: 'Navy',
     description: 'Lightweight training shorts with stretch fabric.',
     price: 40,
-    images: ['https://images.unsplash.com/photo-1483721310020-03333e577078?w=600&q=80'],
+    images: ['https://images.pexels.com/photos/3490357/pexels-photo-3490357.jpeg?auto=compress&cs=tinysrgb&w=600'],
     sizes: ['S', 'M', 'L', 'XL'],
     inStock: true,
     category: 'shorts'

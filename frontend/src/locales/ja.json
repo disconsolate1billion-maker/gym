@@ -1,10 +1,10 @@
 {
   "nav.products": "製品",
-  "nav.whyRaze": "RAZEについて",
+  "nav.whyRaze": "APEXについて",
   "nav.earlyAccess": "先行アクセス",
   "nav.account": "アカウント",
   "nav.orders": "注文履歴",
-  "nav.razeCredit": "RAZEクレジット",
+  "nav.razeCredit": "APEXクレジット",
   "nav.adminDashboard": "管理画面",
   "nav.logOut": "ログアウト",
   "nav.logIn": "ログイン",
@@ -87,15 +87,15 @@
   "footer.sizeGuide": "サイズガイド",
   "footer.shippingReturns": "配送・返品",
   "footer.company": "会社情報",
-  "footer.about": "RAZEについて",
+  "footer.about": "APEXについて",
   "footer.faq": "よくある質問",
   "footer.support": "サポート",
   "footer.trackOrder": "注文追跡",
   "footer.contact": "お問い合わせ",
-  "footer.copyright": "© {{year}} RAZE. All rights reserved.",
+  "footer.copyright": "© {{year}} APEX. All rights reserved.",
   "footer.builtByDiscipline": "規律によって鍛えられた",
   
-  "features.title": "アスリートがRAZEを選ぶ理由",
+  "features.title": "アスリートがAPEXを選ぶ理由",
   "features.performance": "パフォーマンス重視",
   "features.performanceDesc": "アスリートのために設計され、パフォーマンスを向上させます。",
   "features.quality": "プレミアム品質",
@@ -103,7 +103,7 @@
   "features.design": "ミニマリストデザイン",
   "features.designDesc": "ジムから街へシームレスに移行するクリーンで機能的な美学。",
   
-  "newsletter.title": "RAZEコミュニティに参加",
+  "newsletter.title": "APEXコミュニティに参加",
   "newsletter.subtitle": "限定先行アクセス、トレーニングのヒント、特別オファーを入手。",
   "newsletter.placeholder": "メールを入力",
   "newsletter.button": "参加",
@@ -116,7 +116,7 @@
   "waitlist.button": "先行アクセスを取得",
   "waitlist.success": "リストに追加されました！",
   
-  "popup.giveaway.title": "RAZE製品が当たる",
+  "popup.giveaway.title": "APEX製品が当たる",
   "popup.giveaway.subtitle": "完全トレーニングセットが当たるチャンスにメールを入力",
   "popup.giveaway.button": "応募する",
   "popup.email.title": "先行アクセスを取得",
@@ -140,7 +140,7 @@
   "sizeGuide.hips": "ヒップ",
   "sizeGuide.length": "着丈",
   
-  "about.title": "RAZEについて",
+  "about.title": "APEXについて",
   "about.mission": "私たちのミッション",
   "about.story": "私たちのストーリー",
   

@@ -1,10 +1,10 @@
 {
   "nav.products": "제품",
-  "nav.whyRaze": "RAZE를 선택하는 이유",
+  "nav.whyRaze": "APEX를 선택하는 이유",
   "nav.earlyAccess": "얼리 액세스",
   "nav.account": "계정",
   "nav.orders": "주문내역",
-  "nav.razeCredit": "RAZE 크레딧",
+  "nav.razeCredit": "APEX 크레딧",
   "nav.adminDashboard": "관리자 대시보드",
   "nav.logOut": "로그아웃",
   "nav.logIn": "로그인",
@@ -92,10 +92,10 @@
   "footer.support": "지원",
   "footer.trackOrder": "주문 추적",
   "footer.contact": "문의",
-  "footer.copyright": "© {{year}} RAZE. All rights reserved.",
+  "footer.copyright": "© {{year}} APEX. All rights reserved.",
   "footer.builtByDiscipline": "규율로 단련된",
   
-  "features.title": "운동선수들이 RAZE를 선택하는 이유",
+  "features.title": "운동선수들이 APEX를 선택하는 이유",
   "features.performance": "퍼포먼스 중심",
   "features.performanceDesc": "선수를 위해 설계되어 성과를 향상시킵니다.",
   "features.quality": "프리미엄 품질",
@@ -103,7 +103,7 @@
   "features.design": "미니멀리스트 디자인",
   "features.designDesc": "체육관에서 거리까지 매끄럽게 전환되는 깔끔하고 기능적인 미학.",
   
-  "newsletter.title": "RAZE 커뮤니티 가입",
+  "newsletter.title": "APEX 커뮤니티 가입",
   "newsletter.subtitle": "독점 얼리 액세스, 트레이닝 팁, 특별 혜택을 받으세요.",
   "newsletter.placeholder": "이메일 입력",
   "newsletter.button": "가입",
@@ -116,7 +116,7 @@
   "waitlist.button": "얼리 액세스 받기",
   "waitlist.success": "명단에 등록되었습니다!",
   
-  "popup.giveaway.title": "무료 RAZE 장비 증정",
+  "popup.giveaway.title": "무료 APEX 장비 증정",
   "popup.giveaway.subtitle": "완벽한 트레이닝 세트를 받을 기회에 이메일을 입력하세요",
   "popup.giveaway.button": "응모하기",
   "popup.email.title": "얼리 액세스 받기",
@@ -140,7 +140,7 @@
   "sizeGuide.hips": "엉덩이",
   "sizeGuide.length": "길이",
   
-  "about.title": "RAZE 소개",
+  "about.title": "APEX 소개",
   "about.mission": "우리의 미션",
   "about.story": "우리의 이야기",
   

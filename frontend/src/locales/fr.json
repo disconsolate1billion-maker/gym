@@ -1,10 +1,10 @@
 {
   "nav.products": "Produits",
-  "nav.whyRaze": "Pourquoi RAZE",
+  "nav.whyRaze": "Pourquoi APEX",
   "nav.earlyAccess": "Accès Anticipé",
   "nav.account": "Compte",
   "nav.orders": "Commandes",
-  "nav.razeCredit": "Crédit RAZE",
+  "nav.razeCredit": "Crédit APEX",
   "nav.adminDashboard": "Tableau de Bord Admin",
   "nav.logOut": "Déconnexion",
   "nav.logIn": "Connexion",
@@ -92,10 +92,10 @@
   "footer.support": "Support",
   "footer.trackOrder": "Suivre la Commande",
   "footer.contact": "Contact",
-  "footer.copyright": "© {{year}} RAZE. Tous droits réservés.",
+  "footer.copyright": "© {{year}} APEX. Tous droits réservés.",
   "footer.builtByDiscipline": "Forgé par la Discipline",
   
-  "features.title": "Pourquoi les Athlètes Choisissent RAZE",
+  "features.title": "Pourquoi les Athlètes Choisissent APEX",
   "features.performance": "Axé sur la Performance",
   "features.performanceDesc": "Conçu pour les athlètes, notre équipement est fait pour améliorer vos performances.",
   "features.quality": "Qualité Premium",
@@ -103,7 +103,7 @@
   "features.design": "Design Minimaliste",
   "features.designDesc": "Esthétique épurée et fonctionnelle qui passe facilement du gymnase à la rue.",
   
-  "newsletter.title": "Rejoignez la Communauté RAZE",
+  "newsletter.title": "Rejoignez la Communauté APEX",
   "newsletter.subtitle": "Obtenez un accès anticipé exclusif, des conseils d'entraînement et des offres spéciales.",
   "newsletter.placeholder": "Entrez votre email",
   "newsletter.button": "REJOINDRE",
@@ -116,7 +116,7 @@
   "waitlist.button": "OBTENIR L'ACCÈS ANTICIPÉ",
   "waitlist.success": "Vous êtes sur la liste!",
   
-  "popup.giveaway.title": "GAGNEZ DE L'ÉQUIPEMENT RAZE GRATUIT",
+  "popup.giveaway.title": "GAGNEZ DE L'ÉQUIPEMENT APEX GRATUIT",
   "popup.giveaway.subtitle": "Entrez votre email pour avoir une chance de gagner notre ensemble complet d'entraînement",
   "popup.giveaway.button": "PARTICIPER",
   "popup.email.title": "Obtenez un Accès Anticipé",
@@ -140,7 +140,7 @@
   "sizeGuide.hips": "Hanches",
   "sizeGuide.length": "Longueur",
   
-  "about.title": "À Propos de RAZE",
+  "about.title": "À Propos de APEX",
   "about.mission": "Notre Mission",
   "about.story": "Notre Histoire",
   

@@ -1,10 +1,10 @@
 {
   "nav.products": "Produkte",
-  "nav.whyRaze": "Warum RAZE",
+  "nav.whyRaze": "Warum APEX",
   "nav.earlyAccess": "Früher Zugang",
   "nav.account": "Konto",
   "nav.orders": "Bestellungen",
-  "nav.razeCredit": "RAZE Guthaben",
+  "nav.razeCredit": "APEX Guthaben",
   "nav.adminDashboard": "Admin Dashboard",
   "nav.logOut": "Abmelden",
   "nav.logIn": "Anmelden",
@@ -92,10 +92,10 @@
   "footer.support": "Support",
   "footer.trackOrder": "Bestellung verfolgen",
   "footer.contact": "Kontakt",
-  "footer.copyright": "© {{year}} RAZE. Alle Rechte vorbehalten.",
+  "footer.copyright": "© {{year}} APEX. Alle Rechte vorbehalten.",
   "footer.builtByDiscipline": "Durch Disziplin Geformt",
   
-  "features.title": "Warum Athleten RAZE Wählen",
+  "features.title": "Warum Athleten APEX Wählen",
   "features.performance": "Leistungsorientiert",
   "features.performanceDesc": "Für Athleten entwickelt, um Ihre Leistung zu verbessern.",
   "features.quality": "Premium Qualität",
@@ -103,7 +103,7 @@
   "features.design": "Minimalistisches Design",
   "features.designDesc": "Klare, funktionale Ästhetik, die nahtlos vom Fitnessstudio zur Straße übergeht.",
   
-  "newsletter.title": "RAZE Community beitreten",
+  "newsletter.title": "APEX Community beitreten",
   "newsletter.subtitle": "Erhalten Sie exklusiven frühen Zugang, Trainingstipps und Sonderangebote.",
   "newsletter.placeholder": "E-Mail eingeben",
   "newsletter.button": "BEITRETEN",
@@ -116,7 +116,7 @@
   "waitlist.button": "FRÜHEN ZUGANG ERHALTEN",
   "waitlist.success": "Sie sind auf der Liste!",
   
-  "popup.giveaway.title": "GEWINNE RAZE AUSRÜSTUNG",
+  "popup.giveaway.title": "GEWINNE APEX AUSRÜSTUNG",
   "popup.giveaway.subtitle": "Geben Sie Ihre E-Mail ein, um unser komplettes Trainingsset zu gewinnen",
   "popup.giveaway.button": "TEILNEHMEN",
   "popup.email.title": "Frühen Zugang erhalten",
@@ -140,7 +140,7 @@
   "sizeGuide.hips": "Hüfte",
   "sizeGuide.length": "Länge",
   
-  "about.title": "Über RAZE",
+  "about.title": "Über APEX",
   "about.mission": "Unsere Mission",
   "about.story": "Unsere Geschichte",
   

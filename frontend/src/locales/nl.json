@@ -1,10 +1,10 @@
 {
   "nav.products": "Producten",
-  "nav.whyRaze": "Waarom RAZE",
+  "nav.whyRaze": "Waarom APEX",
   "nav.earlyAccess": "Vroege Toegang",
   "nav.account": "Account",
   "nav.orders": "Bestellingen",
-  "nav.razeCredit": "RAZE Tegoed",
+  "nav.razeCredit": "APEX Tegoed",
   "nav.adminDashboard": "Admin Dashboard",
   "nav.logOut": "Uitloggen",
   "nav.logIn": "Inloggen",
@@ -92,10 +92,10 @@
   "footer.support": "Ondersteuning",
   "footer.trackOrder": "Bestelling Volgen",
   "footer.contact": "Contact",
-  "footer.copyright": "© {{year}} RAZE. Alle rechten voorbehouden.",
+  "footer.copyright": "© {{year}} APEX. Alle rechten voorbehouden.",
   "footer.builtByDiscipline": "Gesmeed door Discipline",
   
-  "features.title": "Waarom Atleten RAZE Kiezen",
+  "features.title": "Waarom Atleten APEX Kiezen",
   "features.performance": "Prestatiegericht",
   "features.performanceDesc": "Ontworpen voor atleten, onze uitrusting is gemaakt om je prestaties te verbeteren.",
   "features.quality": "Premium Kwaliteit",
@@ -103,7 +103,7 @@
   "features.design": "Minimalistisch Design",
   "features.designDesc": "Schone, functionele esthetiek die naadloos overgaat van gym naar straat.",
   
-  "newsletter.title": "Word lid van de RAZE Community",
+  "newsletter.title": "Word lid van de APEX Community",
   "newsletter.subtitle": "Krijg exclusieve vroege toegang, trainingstips en speciale aanbiedingen.",
   "newsletter.placeholder": "Vul je e-mail in",
   "newsletter.button": "AANMELDEN",
@@ -116,7 +116,7 @@
   "waitlist.button": "VROEGE TOEGANG KRIJGEN",
   "waitlist.success": "Je staat op de lijst!",
   
-  "popup.giveaway.title": "WIN GRATIS RAZE UITRUSTING",
+  "popup.giveaway.title": "WIN GRATIS APEX UITRUSTING",
   "popup.giveaway.subtitle": "Vul je e-mail in om kans te maken op onze complete trainingsset",
   "popup.giveaway.button": "MEEDOEN",
   "popup.email.title": "Krijg Vroege Toegang",
@@ -140,7 +140,7 @@
   "sizeGuide.hips": "Heupen",
   "sizeGuide.length": "Lengte",
   
-  "about.title": "Over RAZE",
+  "about.title": "Over APEX",
   "about.mission": "Onze Missie",
   "about.story": "Ons Verhaal",
   

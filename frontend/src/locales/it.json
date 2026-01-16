@@ -1,10 +1,10 @@
 {
   "nav.products": "Prodotti",
-  "nav.whyRaze": "Perché RAZE",
+  "nav.whyRaze": "Perché APEX",
   "nav.earlyAccess": "Accesso Anticipato",
   "nav.account": "Account",
   "nav.orders": "Ordini",
-  "nav.razeCredit": "Credito RAZE",
+  "nav.razeCredit": "Credito APEX",
   "nav.adminDashboard": "Pannello Admin",
   "nav.logOut": "Esci",
   "nav.logIn": "Accedi",
@@ -92,10 +92,10 @@
   "footer.support": "Supporto",
   "footer.trackOrder": "Traccia Ordine",
   "footer.contact": "Contatti",
-  "footer.copyright": "© {{year}} RAZE. Tutti i diritti riservati.",
+  "footer.copyright": "© {{year}} APEX. Tutti i diritti riservati.",
   "footer.builtByDiscipline": "Forgiato dalla Disciplina",
   
-  "features.title": "Perché gli Atleti Scelgono RAZE",
+  "features.title": "Perché gli Atleti Scelgono APEX",
   "features.performance": "Orientato alle Prestazioni",
   "features.performanceDesc": "Progettato per gli atleti, il nostro equipaggiamento è fatto per migliorare le tue prestazioni.",
   "features.quality": "Qualità Premium",
@@ -103,7 +103,7 @@
   "features.design": "Design Minimalista",
   "features.designDesc": "Estetica pulita e funzionale che passa facilmente dalla palestra alla strada.",
   
-  "newsletter.title": "Unisciti alla Community RAZE",
+  "newsletter.title": "Unisciti alla Community APEX",
   "newsletter.subtitle": "Ottieni accesso anticipato esclusivo, consigli di allenamento e offerte speciali.",
   "newsletter.placeholder": "Inserisci la tua email",
   "newsletter.button": "ISCRIVITI",
@@ -116,7 +116,7 @@
   "waitlist.button": "OTTIENI ACCESSO ANTICIPATO",
   "waitlist.success": "Sei nella lista!",
   
-  "popup.giveaway.title": "VINCI ATTREZZATURA RAZE GRATIS",
+  "popup.giveaway.title": "VINCI ATTREZZATURA APEX GRATIS",
   "popup.giveaway.subtitle": "Inserisci la tua email per vincere il nostro set completo da allenamento",
   "popup.giveaway.button": "PARTECIPA",
   "popup.email.title": "Ottieni Accesso Anticipato",
@@ -140,7 +140,7 @@
   "sizeGuide.hips": "Fianchi",
   "sizeGuide.length": "Lunghezza",
   
-  "about.title": "Chi è RAZE",
+  "about.title": "Chi è APEX",
   "about.mission": "La Nostra Missione",
   "about.story": "La Nostra Storia",
   

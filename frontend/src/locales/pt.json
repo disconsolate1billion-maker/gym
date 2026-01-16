@@ -1,10 +1,10 @@
 {
   "nav.products": "Produtos",
-  "nav.whyRaze": "Por que RAZE",
+  "nav.whyRaze": "Por que APEX",
   "nav.earlyAccess": "Acesso Antecipado",
   "nav.account": "Conta",
   "nav.orders": "Pedidos",
-  "nav.razeCredit": "Crédito RAZE",
+  "nav.razeCredit": "Crédito APEX",
   "nav.adminDashboard": "Painel Admin",
   "nav.logOut": "Sair",
   "nav.logIn": "Entrar",
@@ -92,10 +92,10 @@
   "footer.support": "Suporte",
   "footer.trackOrder": "Rastrear Pedido",
   "footer.contact": "Contato",
-  "footer.copyright": "© {{year}} RAZE. Todos os direitos reservados.",
+  "footer.copyright": "© {{year}} APEX. Todos os direitos reservados.",
   "footer.builtByDiscipline": "Forjado pela Disciplina",
   
-  "features.title": "Por que Atletas Escolhem RAZE",
+  "features.title": "Por que Atletas Escolhem APEX",
   "features.performance": "Focado em Performance",
   "features.performanceDesc": "Projetado para atletas, nosso equipamento é feito para melhorar seu desempenho.",
   "features.quality": "Qualidade Premium",
@@ -103,7 +103,7 @@
   "features.design": "Design Minimalista",
   "features.designDesc": "Estética limpa e funcional que transita perfeitamente da academia para a rua.",
   
-  "newsletter.title": "Junte-se à Comunidade RAZE",
+  "newsletter.title": "Junte-se à Comunidade APEX",
   "newsletter.subtitle": "Obtenha acesso antecipado exclusivo, dicas de treino e ofertas especiais.",
   "newsletter.placeholder": "Digite seu email",
   "newsletter.button": "ENTRAR",
@@ -116,7 +116,7 @@
   "waitlist.button": "OBTER ACESSO ANTECIPADO",
   "waitlist.success": "Você está na lista!",
   
-  "popup.giveaway.title": "GANHE EQUIPAMENTO RAZE GRÁTIS",
+  "popup.giveaway.title": "GANHE EQUIPAMENTO APEX GRÁTIS",
   "popup.giveaway.subtitle": "Digite seu email para ter a chance de ganhar nosso conjunto completo de treino",
   "popup.giveaway.button": "PARTICIPAR",
   "popup.email.title": "Obtenha Acesso Antecipado",
@@ -140,7 +140,7 @@
   "sizeGuide.hips": "Quadril",
   "sizeGuide.length": "Comprimento",
   
-  "about.title": "Sobre a RAZE",
+  "about.title": "Sobre a APEX",
   "about.mission": "Nossa Missão",
   "about.story": "Nossa História",
   

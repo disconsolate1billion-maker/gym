@@ -1,10 +1,10 @@
 {
   "nav.products": "产品",
-  "nav.whyRaze": "为什么选择RAZE",
+  "nav.whyRaze": "为什么选择APEX",
   "nav.earlyAccess": "抢先体验",
   "nav.account": "账户",
   "nav.orders": "订单",
-  "nav.razeCredit": "RAZE积分",
+  "nav.razeCredit": "APEX积分",
   "nav.adminDashboard": "管理后台",
   "nav.logOut": "退出登录",
   "nav.logIn": "登录",
@@ -92,10 +92,10 @@
   "footer.support": "支持",
   "footer.trackOrder": "追踪订单",
   "footer.contact": "联系我们",
-  "footer.copyright": "© {{year}} RAZE. 保留所有权利。",
+  "footer.copyright": "© {{year}} APEX. 保留所有权利。",
   "footer.builtByDiscipline": "纪律铸就",
   
-  "features.title": "运动员选择RAZE的原因",
+  "features.title": "运动员选择APEX的原因",
   "features.performance": "性能驱动",
   "features.performanceDesc": "专为运动员设计，我们的装备旨在提升您的表现。",
   "features.quality": "优质品质",
@@ -103,7 +103,7 @@
   "features.design": "极简设计",
   "features.designDesc": "简洁实用的美学，从健身房到街头无缝过渡。",
   
-  "newsletter.title": "加入RAZE社区",
+  "newsletter.title": "加入APEX社区",
   "newsletter.subtitle": "获得独家抢先体验、训练技巧和特别优惠。",
   "newsletter.placeholder": "输入您的邮箱",
   "newsletter.button": "加入",
@@ -116,7 +116,7 @@
   "waitlist.button": "获取抢先体验",
   "waitlist.success": "您已加入名单！",
   
-  "popup.giveaway.title": "免费赢取RAZE装备",
+  "popup.giveaway.title": "免费赢取APEX装备",
   "popup.giveaway.subtitle": "输入邮箱有机会赢取我们的完整训练套装",
   "popup.giveaway.button": "参与抽奖",
   "popup.email.title": "获取抢先体验",
@@ -140,7 +140,7 @@
   "sizeGuide.hips": "臀围",
   "sizeGuide.length": "衣长",
   
-  "about.title": "关于RAZE",
+  "about.title": "关于APEX",
   "about.mission": "我们的使命",
   "about.story": "我们的故事",
   

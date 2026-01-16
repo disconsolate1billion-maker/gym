@@ -20,7 +20,6 @@ const Header = () => {
   const cartCount = getCartCount();
   const aboutDropdownRef = useRef(null);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (aboutDropdownRef.current && !aboutDropdownRef.current.contains(event.target)) {
@@ -54,8 +53,8 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <Link to="/" className="header-logo">
-            <h1 className="logo-text">RAZE</h1>
-            <span className="logo-tagline">Built by Discipline</span>
+            <h1 className="logo-text">APEX</h1>
+            <span className="logo-tagline">Forged in the Fire</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -89,7 +88,7 @@ const Header = () => {
                     className="nav-dropdown-item"
                     onClick={() => setIsAboutDropdownOpen(false)}
                   >
-                    About RAZE
+                    About APEX
                   </Link>
                   <Link 
                     to="/from-our-customers" 
@@ -97,7 +96,7 @@ const Header = () => {
                     onClick={() => setIsAboutDropdownOpen(false)}
                     data-testid="from-our-customers-link"
                   >
-                    From our customers
+                    Athlete Reviews
                   </Link>
                 </div>
               )}
@@ -107,9 +106,9 @@ const Header = () => {
               {t('nav.earlyAccess')}
             </button>
 
-            {/* 11.11 Sale Link */}
+            {/* Championship Sale Link */}
             <Link to="/1111-sale" className="nav-link nav-sale-link">
-              11.11 Sale
+              Championship Sale
             </Link>
           </nav>
 
@@ -154,7 +153,7 @@ const Header = () => {
                         {t('nav.orders')}
                       </Link>
                       <Link to="/account/credit" className="dropdown-item" onClick={() => setIsUserMenuOpen(false)}>
-                        {t('nav.razeCredit')}
+                        APEX Credit
                       </Link>
                       {user?.is_admin && (
                         <Link to="/admin" className="dropdown-item admin-link" onClick={() => setIsUserMenuOpen(false)}>
@@ -217,14 +216,14 @@ const Header = () => {
                     className="mobile-dropdown-item"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    About RAZE
+                    About APEX
                   </Link>
                   <Link 
                     to="/from-our-customers" 
                     className="mobile-dropdown-item"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    From our customers
+                    Athlete Reviews
                   </Link>
                 </div>
               )}
@@ -234,9 +233,9 @@ const Header = () => {
               {t('nav.earlyAccess')}
             </button>
 
-            {/* 11.11 Sale Link - Mobile */}
+            {/* Championship Sale Link - Mobile */}
             <Link to="/1111-sale" className="nav-link nav-sale-link" onClick={() => setIsMenuOpen(false)}>
-              11.11 Sale
+              Championship Sale
             </Link>
 
             {isAuthenticated ? (

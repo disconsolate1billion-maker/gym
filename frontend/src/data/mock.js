@@ -1,100 +1,99 @@
-// Mock data for RAZE landing page
+// Mock data for APEX landing page - Wrestling/Combat Training Gear
 
 export const brandContent = {
-  tagline: "Built by Discipline",
-  heroTitle: "RAZE",
-  heroSubtitle: "Minimalist performance training wear engineered for gymnastics. Built for overhead movement, inversion, and full range control—designed to perform through repetition and stay clean beyond the gym.",
+  tagline: "Forged in the Fire",
+  heroTitle: "APEX",
+  heroSubtitle: "Elite compression gear engineered for wrestlers and combat athletes. Built to endure grueling practices, make weight, and dominate on the mat—designed by former wrestlers who know what it takes.",
   launchNote: "Drop 01 is live."
 };
 
 // Pricing structure
 export const pricing = {
-  shirt: 45,
-  shorts: 55,
-  trainingSetBundle: 69, // Shirt + Shorts bundle price
+  shirt: 55,
+  shorts: 65,
+  trainingSetBundle: 89, // Shirt + Shorts bundle price
   discounts: {
     twoShirts: 0.20,    // 20% off when buying 2 shirts
     threeShirts: 0.35,  // 35% off when buying 3+ shirts
   }
 };
 
-// Hero product (single shirt for hero section - Black/Cyan)
+// Hero product (single compression shirt for hero section)
 export const heroProduct = {
   id: 1,
-  name: "Performance T-Shirt",
-  color: "Black / Cyan",
-  // Front view - clean transparent PNG
-  image: "/images/products/front_shirt_black_cyan.png",
-  // Back view - cyan logo with "Built by Discipline" design
-  backImage: "/images/products/back_shirt_black_cyan.png"
+  name: "Compression Shirt",
+  color: "Black / Red",
+  // Using external images for hero
+  image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80",
+  backImage: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80"
 };
 
 // All shirt variants (4 styles)
 export const shirts = [
   {
     id: 1,
-    name: "Performance T-Shirt",
-    category: "Shirts",
-    variant: "Black / Cyan",
+    name: "Compression Shirt",
+    category: "Compression",
+    variant: "Black / Red",
     color: "Black",
-    logoColor: "Cyan",
-    hex: "#00D4FF",
-    image: "/images/products/front_shirt_black_cyan.png",
-    backImage: "/images/products/back_shirt_black_cyan.png",
-    price: 45,
-    originalPrice: 65,
-    sizes: ["XS", "S", "M", "L"],
+    logoColor: "Red",
+    hex: "#DC2626",
+    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80",
+    backImage: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80",
+    price: 55,
+    originalPrice: 75,
+    sizes: ["XS", "S", "M", "L", "XL"],
     status: "available",
-    soldCount: 425,
+    soldCount: 892,
     mostPopular: true
   },
   {
     id: 2,
-    name: "Performance T-Shirt",
-    category: "Shirts",
-    variant: "Black / Silver",
+    name: "Compression Shirt",
+    category: "Compression",
+    variant: "Black / Gold",
     color: "Black",
-    logoColor: "Silver",
-    hex: "#C0C0C0",
-    image: "/images/products/front_shirt_black_silver.png",
-    backImage: "/images/products/back_shirt_black_silver.png",
-    price: 45,
-    originalPrice: 65,
-    sizes: ["XS", "S", "M", "L"],
+    logoColor: "Gold",
+    hex: "#D4AF37",
+    image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&q=80",
+    backImage: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&q=80",
+    price: 55,
+    originalPrice: 75,
+    sizes: ["XS", "S", "M", "L", "XL"],
     status: "available",
-    soldCount: 183
+    soldCount: 654
   },
   {
     id: 3,
-    name: "Performance T-Shirt",
-    category: "Shirts",
-    variant: "Grey / Cyan",
-    color: "Grey",
-    logoColor: "Cyan",
-    hex: "#00D4FF",
-    image: "/images/products/front_shirt_grey_cyan.png",
-    backImage: "/images/products/back_shirt_grey_cyan.png",
-    price: 45,
-    originalPrice: 65,
-    sizes: ["XS", "S", "M", "L"],
+    name: "Compression Shirt",
+    category: "Compression",
+    variant: "Red / Black",
+    color: "Red",
+    logoColor: "Black",
+    hex: "#1a1a1a",
+    image: "https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=600&q=80",
+    backImage: "https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=600&q=80",
+    price: 55,
+    originalPrice: 75,
+    sizes: ["XS", "S", "M", "L", "XL"],
     status: "available",
-    soldCount: 298
+    soldCount: 445
   },
   {
     id: 4,
-    name: "Performance T-Shirt",
-    category: "Shirts",
-    variant: "Grey / White",
-    color: "Grey",
-    logoColor: "White",
-    hex: "#FFFFFF",
-    image: "/images/products/front_shirt_grey_white.png",
-    backImage: "/images/products/back_shirt_grey_white.png",
-    price: 45,
-    originalPrice: 65,
-    sizes: ["XS", "S", "M", "L"],
+    name: "Compression Shirt",
+    category: "Compression",
+    variant: "White / Red",
+    color: "White",
+    logoColor: "Red",
+    hex: "#DC2626",
+    image: "https://images.unsplash.com/photo-1618886614638-80e3c103d2dc?w=600&q=80",
+    backImage: "https://images.unsplash.com/photo-1618886614638-80e3c103d2dc?w=600&q=80",
+    price: 55,
+    originalPrice: 75,
+    sizes: ["XS", "S", "M", "L", "XL"],
     status: "available",
-    soldCount: 201
+    soldCount: 312
   }
 ];
 
@@ -102,40 +101,40 @@ export const shirts = [
 export const shorts = [
   {
     id: 5,
-    name: "Performance Shorts",
+    name: "Wrestling Shorts",
     category: "Shorts",
-    variant: "Black / Cyan",
+    variant: "Black / Red",
     color: "Black",
-    logoColor: "Cyan",
-    hex: "#00D4FF",
-    image: "/images/products/front_shorts_black_cyan.png",
-    backImage: "/images/products/back_shorts_black.png",
-    price: 55,
-    originalPrice: 75,
+    logoColor: "Red",
+    hex: "#DC2626",
+    image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=600&q=80",
+    backImage: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=600&q=80",
+    price: 65,
+    originalPrice: 85,
     mensSizes: ["S", "M", "L", "XL"],
     womensSizes: ["XS", "S", "M", "L"],
     sizes: ["S", "M", "L", "XL"],
     status: "available",
-    soldCount: 357,
+    soldCount: 567,
     mostPopular: true
   },
   {
     id: 6,
-    name: "Performance Shorts",
+    name: "Wrestling Shorts",
     category: "Shorts",
-    variant: "Black / Silver",
+    variant: "Black / Gold",
     color: "Black",
-    logoColor: "Silver",
-    hex: "#C0C0C0",
-    image: "/images/products/front_shorts_black_silver.png",
-    backImage: "/images/products/back_shorts_black.png",
-    price: 55,
-    originalPrice: 75,
+    logoColor: "Gold",
+    hex: "#D4AF37",
+    image: "https://images.unsplash.com/photo-1562771379-eafdca7a02f8?w=600&q=80",
+    backImage: "https://images.unsplash.com/photo-1562771379-eafdca7a02f8?w=600&q=80",
+    price: 65,
+    originalPrice: 85,
     mensSizes: ["S", "M", "L", "XL"],
     womensSizes: ["XS", "S", "M", "L"],
     sizes: ["S", "M", "L", "XL"],
     status: "available",
-    soldCount: 115
+    soldCount: 234
   }
 ];
 
@@ -150,11 +149,11 @@ export const products = [...shirts, ...shorts];
 export const bundles = [
   {
     id: "training-set",
-    name: "RAZE Training Set",
-    description: "Shirt + Shorts — designed to work together",
-    bundlePrice: 69,
-    originalBundlePrice: 100,
-    savings: 31, // $45 + $55 = $100, bundle = $69
+    name: "APEX Training Set",
+    description: "Compression Shirt + Wrestling Shorts — built to perform together",
+    bundlePrice: 89,
+    originalBundlePrice: 120,
+    savings: 31,
     savingsText: "Save $31"
   }
 ];
@@ -162,34 +161,34 @@ export const bundles = [
 export const features = [
   {
     id: 1,
-    title: "Performance Driven",
-    description: "Technical fabrics selected for heat management, stretch retention, and repeated high-intensity use.",
+    title: "Battle-Tested Durability",
+    description: "Reinforced seams and abrasion-resistant fabric built to survive thousands of hours on the mat.",
     icon: "activity"
   },
   {
     id: 2,
-    title: "Minimalist Design",
-    description: "No loud graphics. No distractions. Every detail serves movement, focus, and longevity.",
+    title: "Competition Cut",
+    description: "Streamlined fit that stays in place during takedowns, scrambles, and intense grappling sessions.",
     icon: "minimize-2"
   },
   {
     id: 3,
-    title: "Gymnastics Heritage",
-    description: "Born from gymnastics — a discipline where precision, control, and durability aren't optional.",
+    title: "Wrestling Heritage",
+    description: "Designed by former NCAA wrestlers who understand the demands of the sport at every level.",
     icon: "target"
   },
   {
     id: 4,
-    title: "Purpose-Built Fit",
-    description: "Engineered patterns for overhead movement, compression, and control — not lifestyle silhouettes.",
+    title: "Weight-Cut Ready",
+    description: "Moisture-wicking technology that helps you maintain focus and performance during intense training.",
     icon: "globe"
   }
 ];
 
 export const socialLinks = {
-  instagram: "https://www.instagram.com/raze_training_wear/",
-  tiktok: "https://www.tiktok.com/@razetrainingwear",
-  twitter: "https://x.com/razetraining",
-  youtube: "https://www.youtube.com/@razetrainingwear",
-  email: "support@razetraining.com"
+  instagram: "https://www.instagram.com/apex_wrestling/",
+  tiktok: "https://www.tiktok.com/@apexwrestling",
+  twitter: "https://x.com/apexwrestling",
+  youtube: "https://www.youtube.com/@apexwrestling",
+  email: "support@apexwrestling.com"
 };

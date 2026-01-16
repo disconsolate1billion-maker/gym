@@ -37,8 +37,8 @@ const Footer = () => {
       <div className="footer-content">
         {/* Brand */}
         <div className="footer-brand">
-          <h3 className="footer-logo">RAZE</h3>
-          <p className="footer-tagline">Built by Discipline</p>
+          <h3 className="footer-logo">APEX</h3>
+          <p className="footer-tagline">Forged in the Fire</p>
           <div className="social-links">
             <a href={socialLinks.instagram} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
               <InstagramIcon size={20} />
@@ -63,7 +63,7 @@ const Footer = () => {
           <h4 className="footer-heading">Shop</h4>
           <ul className="footer-list">
             <li><Link to="/shop">All Products</Link></li>
-            <li><Link to="/1111-sale">11.11 Sale</Link></li>
+            <li><Link to="/1111-sale">Championship Sale</Link></li>
             <li><Link to="/size-guide">Size Guide</Link></li>
           </ul>
         </div>
@@ -103,7 +103,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p className="footer-copyright">
-          © {new Date().getFullYear()} RAZE. All rights reserved.
+          © {new Date().getFullYear()} APEX Wrestling. All rights reserved.
         </p>
       </div>
     </footer>

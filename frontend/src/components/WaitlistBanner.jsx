@@ -6,17 +6,15 @@ const WaitlistBanner = ({ onClick }) => {
   const [spotsRemaining, setSpotsRemaining] = useState(null);
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [showFixed, setShowFixed] = useState(false);
-  const [isVisible, setIsVisible] = useState(false); // Hidden until first interaction
+  const [isVisible, setIsVisible] = useState(false);
   const bannerRef = useRef(null);
 
   // Next drop date - February 20, 2026
   const targetDate = new Date('2026-02-20T00:00:00');
 
-  // Show banner after first click, scroll, or touch
   useEffect(() => {
     const handleFirstInteraction = () => {
       setIsVisible(true);
-      // Remove all listeners after first interaction
       window.removeEventListener('scroll', handleFirstInteraction);
       window.removeEventListener('click', handleFirstInteraction);
       window.removeEventListener('touchstart', handleFirstInteraction);
@@ -53,16 +51,12 @@ const WaitlistBanner = ({ onClick }) => {
 
     updateCountdown();
     const timer = setInterval(updateCountdown, 1000);
-    
-    // Spots only change on page reload after 2+ hours (handled by calculateSpotsRemaining)
-    // No automatic decrement timer needed
 
     return () => {
       clearInterval(timer);
     };
   }, []);
 
-  // Track when inline banner scrolls past header
   useEffect(() => {
     const handleScroll = () => {
       if (!bannerRef.current) return;
@@ -70,7 +64,6 @@ const WaitlistBanner = ({ onClick }) => {
       const headerHeight = window.innerWidth <= 768 ? 56 : 72;
       const bannerRect = bannerRef.current.getBoundingClientRect();
       
-      // Show fixed banner when inline banner top reaches header bottom
       setShowFixed(bannerRect.top <= headerHeight);
     };
 

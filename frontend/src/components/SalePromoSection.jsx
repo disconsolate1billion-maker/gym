@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Tag } from 'lucide-react';
 
 const SalePromoSection = () => {
-  // Countdown timer state (optional - using static for now, can enable real countdown)
   const [timeLeft, setTimeLeft] = useState({
     days: 3,
     hours: 12,
@@ -11,7 +10,6 @@ const SalePromoSection = () => {
     seconds: 30
   });
 
-  // Real countdown timer (uncomment to enable)
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(prev => {
@@ -56,17 +54,17 @@ const SalePromoSection = () => {
           {/* Badge/Pill */}
           <div className="sale-promo-badge">
             <Tag size={14} />
-            <span>11.11 SALE</span>
+            <span>CHAMPIONSHIP SALE</span>
           </div>
 
           {/* Main Heading */}
           <h2 className="sale-promo-heading">
-            11.11 Sale — Biggest Sale of the Year
+            Championship Sale — Train Like a Champion
           </h2>
 
           {/* Subheading */}
           <p className="sale-promo-subheading">
-            Up to 50% off selected performance wear. Limited time only.
+            Up to 50% off elite compression gear. Limited time only.
           </p>
 
           {/* Countdown */}
@@ -97,7 +95,7 @@ const SalePromoSection = () => {
 
           {/* Primary CTA Button */}
           <Link to="/1111-sale" className="sale-promo-button" data-testid="shop-sale-btn">
-            Shop 11.11 Sale
+            Shop Championship Sale
           </Link>
 
           {/* Secondary Link */}

@@ -1,20 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Newsletter = ({ onJoinClick }) => {
+  const { t } = useTranslation();
+
   return (
     <section className="newsletter-section" id="newsletter">
       <div className="container">
-        <div className="newsletter-content">
-          <h2 className="newsletter-title">First Drop Coming Soon</h2>
-          <p className="newsletter-description">
-            Be the first to know when Drop 01 launches.
-          </p>
-          <div className="newsletter-cta">
-            <button className="btn-cta" onClick={onJoinClick}>
-              Join Early Access
-            </button>
-          </div>
-        </div>
+        <h2 className="newsletter-title">{t('newsletter.title')}</h2>
+        <p className="newsletter-subtitle">{t('newsletter.subtitle')}</p>
+        <button className="newsletter-btn" onClick={onJoinClick}>
+          {t('waitlist.button')}
+        </button>
       </div>
     </section>
   );

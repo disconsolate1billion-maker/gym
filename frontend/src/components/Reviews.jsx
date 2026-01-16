@@ -1,101 +1,50 @@
 import React from 'react';
-import { Star } from 'lucide-react';
-
-const reviews = [
-  {
-    id: 1,
-    name: "Marcus T.",
-    rating: 5,
-    text: "fits perfect, doesn't ride up during handstands. exactly what i was looking for",
-    product: "Black / Cyan"
-  },
-  {
-    id: 2,
-    name: "Sarah K.",
-    rating: 5,
-    text: "finally a shirt that actually stays put. ordered 2 more lol",
-    product: "Grey / Cyan"
-  },
-  {
-    id: 3,
-    name: "James R.",
-    rating: 5,
-    text: "wore it all week training, still looks new. quality is 10/10",
-    product: "Black / Cyan"
-  },
-  {
-    id: 4,
-    name: "Emily W.",
-    rating: 5,
-    text: "so lightweight but somehow still holds its shape. love the minimal look",
-    product: "Grey / Cyan"
-  },
-  {
-    id: 5,
-    name: "David L.",
-    rating: 5,
-    text: "best gym shirt i own now. wish i found this brand sooner",
-    product: "Black / Cyan"
-  },
-  {
-    id: 6,
-    name: "Nina P.",
-    rating: 5,
-    text: "the fabric is amazing for gymnastics. breathes so well",
-    product: "Grey / Cyan"
-  },
-  {
-    id: 7,
-    name: "Chris M.",
-    rating: 5,
-    text: "clean design, no annoying logos everywhere. just quality",
-    product: "Black / Cyan"
-  },
-  {
-    id: 8,
-    name: "Alex H.",
-    rating: 5,
-    text: "bought for my husband, he won't wear anything else now",
-    product: "Black / Cyan"
-  }
-];
 
 const Reviews = () => {
-  // Double the reviews for seamless infinite scroll
-  const doubledReviews = [...reviews, ...reviews];
+  const reviews = [
+    {
+      id: 1,
+      name: "Marcus T.",
+      title: "D1 Wrestler, Ohio State",
+      text: "Finally found compression gear that doesn't ride up during live wrestling. Been through two seasons and it still looks brand new.",
+      rating: 5
+    },
+    {
+      id: 2,
+      name: "Sarah K.",
+      title: "BJJ Competitor",
+      text: "The grip on these shorts is incredible. No more adjusting mid-roll. Best training gear I've ever owned.",
+      rating: 5
+    },
+    {
+      id: 3,
+      name: "Coach Rodriguez",
+      title: "High School Wrestling Coach",
+      text: "Recommended APEX to my entire team. The durability is unmatched - these kids put gear through hell and APEX holds up.",
+      rating: 5
+    }
+  ];
 
   return (
     <section className="reviews-section" id="reviews">
-      <div className="reviews-header">
-        <h2 className="reviews-title">What Athletes Say</h2>
-        <div className="reviews-rating">
-          <div className="stars-row">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} size={18} fill="#F59E0B" color="#F59E0B" />
-            ))}
-          </div>
-          <span className="rating-text">4.9 from 127 reviews</span>
+      <div className="container">
+        <div className="section-header">
+          <h2 className="section-title">What Athletes Say</h2>
+          <p className="section-subtitle">Trusted by wrestlers and combat athletes worldwide</p>
         </div>
-      </div>
 
-      <div className="reviews-carousel-wrapper">
-        <div className="reviews-carousel">
-          {doubledReviews.map((review, index) => (
-            <div key={`${review.id}-${index}`} className="review-card-compact">
-              <div className="review-stars-compact">
-                {[...Array(5)].map((_, i) => (
-                  <Star 
-                    key={i} 
-                    size={14} 
-                    fill="#F59E0B"
-                    color="#F59E0B"
-                  />
+        <div className="reviews-grid">
+          {reviews.map((review) => (
+            <div key={review.id} className="review-card">
+              <div className="review-stars">
+                {[...Array(review.rating)].map((_, i) => (
+                  <span key={i} className="star">\u2605</span>
                 ))}
               </div>
-              <p className="review-text-compact">"{review.text}"</p>
+              <p className="review-text">"{review.text}"</p>
               <div className="review-author">
-                <span className="author-name">{review.name}</span>
-                <span className="author-product">{review.product}</span>
+                <span className="review-name">{review.name}</span>
+                <span className="review-title">{review.title}</span>
               </div>
             </div>
           ))}

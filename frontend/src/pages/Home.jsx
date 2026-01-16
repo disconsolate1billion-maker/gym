@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { products } from '../data/products';
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, Truck, RotateCcw, Shield } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 const Home = () => {
@@ -13,45 +13,73 @@ const Home = () => {
       name: product.name,
       variant: product.variant,
       price: product.price,
-      size: product.sizes[Math.floor(product.sizes.length / 2)],
+      size: 'M',
       image: product.images[0],
       quantity: 1
     });
   };
 
+  const shirts = products.filter(p => p.category === 'shirts');
+  const shorts = products.filter(p => p.category === 'shorts');
+
   return (
     <div className="home-page">
-      {/* Simple Hero */}
-      <section className="hero-simple">
-        <h1>APEX Wrestling</h1>
-        <p>Compression gear for wrestlers</p>
-        <Link to="/shop" className="btn-primary">Shop Now</Link>
+      {/* Hero Banner */}
+      <section className="hero">
+        <div className="hero-content">
+          <h1>Athletic Training Gear</h1>
+          <p>Quality compression wear for wrestlers and athletes</p>
+          <Link to="/shop" className="btn-primary">Shop All Products</Link>
+        </div>
       </section>
 
-      {/* Products Grid */}
-      <section className="products-section">
+      {/* Trust Bar */}
+      <section className="trust-bar">
+        <div className="trust-item">
+          <Truck size={20} />
+          <span>Free Shipping $75+</span>
+        </div>
+        <div className="trust-item">
+          <RotateCcw size={20} />
+          <span>30-Day Returns</span>
+        </div>
+        <div className="trust-item">
+          <Shield size={20} />
+          <span>Secure Checkout</span>
+        </div>
+      </section>
+
+      {/* Compression Shirts */}
+      <section className="product-section">
         <div className="container">
-          <h2 className="section-title">Our Products</h2>
+          <div className="section-header">
+            <h2>Compression Shirts</h2>
+            <Link to="/shop" className="view-all">View All →</Link>
+          </div>
           
           <div className="products-grid">
-            {products.map((product) => (
-              <div key={product.id} className="product-card" data-testid={`product-${product.id}`}>
-                <Link to={`/product/${product.id}`}>
+            {shirts.map((product) => (
+              <div key={product.id} className="product-card">
+                <Link to={`/product/${product.id}`} className="product-image-link">
                   <div className="product-image">
-                    <img src={product.images[0]} alt={product.name} />
+                    <img src={product.images[0]} alt={product.name} loading="lazy" />
                   </div>
                 </Link>
                 <div className="product-info">
-                  <h3 className="product-name">{product.name}</h3>
+                  <Link to={`/product/${product.id}`}>
+                    <h3 className="product-name">{product.name}</h3>
+                  </Link>
                   <p className="product-variant">{product.variant}</p>
-                  <p className="product-price">${product.price}</p>
-                  <button 
-                    className="add-to-cart-btn"
-                    onClick={() => handleAddToCart(product)}
-                  >
-                    <ShoppingCart size={16} />
-                    Add to Cart
-                  </button>
+                  <div className="product-footer">
+                    <span className="product-price">${product.price}</span>
+                    <button 
+                      className="quick-add-btn"
+                      onClick={() => handleAddToCart(product)}
+                      title="Add to Cart"
+                    >
+                      <ShoppingCart size={18} />
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
@@ -59,13 +87,49 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Simple About */}
-      <section className="about-simple">
+      {/* Training Shorts */}
+      <section className="product-section alt-bg">
         <div className="container">
-          <h2>About Us</h2>
-          <p>We sell compression shirts and shorts for wrestling and combat sports training.</p>
-          <Link to="/about">Learn More</Link>
+          <div className="section-header">
+            <h2>Training Shorts</h2>
+            <Link to="/shop" className="view-all">View All →</Link>
+          </div>
+          
+          <div className="products-grid">
+            {shorts.map((product) => (
+              <div key={product.id} className="product-card">
+                <Link to={`/product/${product.id}`} className="product-image-link">
+                  <div className="product-image">
+                    <img src={product.images[0]} alt={product.name} loading="lazy" />
+                  </div>
+                </Link>
+                <div className="product-info">
+                  <Link to={`/product/${product.id}`}>
+                    <h3 className="product-name">{product.name}</h3>
+                  </Link>
+                  <p className="product-variant">{product.variant}</p>
+                  <div className="product-footer">
+                    <span className="product-price">${product.price}</span>
+                    <button 
+                      className="quick-add-btn"
+                      onClick={() => handleAddToCart(product)}
+                      title="Add to Cart"
+                    >
+                      <ShoppingCart size={18} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+      </section>
+
+      {/* Simple CTA */}
+      <section className="cta-section">
+        <h2>New to APEX?</h2>
+        <p>Quality training gear at fair prices. No gimmicks.</p>
+        <Link to="/about" className="btn-secondary">Learn More</Link>
       </section>
     </div>
   );

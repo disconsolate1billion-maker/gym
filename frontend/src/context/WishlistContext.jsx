@@ -16,7 +16,7 @@ export const WishlistProvider = ({ children }) => {
   // Load wishlist from localStorage on mount
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('raze_wishlist');
+      const saved = localStorage.getItem('apex_wishlist');
       if (saved) {
         setWishlist(JSON.parse(saved));
       }
@@ -28,7 +28,7 @@ export const WishlistProvider = ({ children }) => {
   // Save wishlist to localStorage whenever it changes
   useEffect(() => {
     try {
-      localStorage.setItem('raze_wishlist', JSON.stringify(wishlist));
+      localStorage.setItem('apex_wishlist', JSON.stringify(wishlist));
     } catch (e) {
       console.error('Failed to save wishlist:', e);
     }

@@ -11,12 +11,12 @@ if (!API_URL) {
 }
 
 // Helper to get/set session token from localStorage (fallback for cross-domain cookies)
-const getStoredToken = () => localStorage.getItem('raze_auth_token');
+const getStoredToken = () => localStorage.getItem('apex_auth_token');
 const setStoredToken = (token) => {
   if (token) {
-    localStorage.setItem('raze_auth_token', token);
+    localStorage.setItem('apex_auth_token', token);
   } else {
-    localStorage.removeItem('raze_auth_token');
+    localStorage.removeItem('apex_auth_token');
   }
 };
 

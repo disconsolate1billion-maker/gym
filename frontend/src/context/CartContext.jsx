@@ -15,10 +15,10 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [sessionId] = useState(() => {
     // Generate or retrieve session ID
-    const existing = localStorage.getItem('raze_session_id');
+    const existing = localStorage.getItem('apex_session_id');
     if (existing) return existing;
     const newId = 'session_' + Math.random().toString(36).substr(2, 9);
-    localStorage.setItem('raze_session_id', newId);
+    localStorage.setItem('apex_session_id', newId);
     return newId;
   });
 

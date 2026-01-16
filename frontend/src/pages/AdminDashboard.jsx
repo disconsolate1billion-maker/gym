@@ -790,7 +790,7 @@ const AdminDashboard = () => {
     <div className="admin-dashboard">
       {/* Header */}
       <div className="admin-header">
-        <h1>RAZE Admin Dashboard</h1>
+        <h1>APEX Admin Dashboard</h1>
         <button onClick={handleLogout} className="admin-logout-btn">
           <LogOut size={18} />
           Logout

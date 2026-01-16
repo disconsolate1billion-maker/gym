@@ -49,7 +49,7 @@ const Returns = () => {
             </div>
 
             <p className="policy-statement">
-              Every RAZE product is engineered for performance and built to last. We stand behind the quality of our gear with confidence.
+              Every APEX product is engineered for performance and built to last. We stand behind the quality of our gear with confidence.
             </p>
 
             <h3>All Sales Are Final</h3>
@@ -101,7 +101,7 @@ const Returns = () => {
                 <div className="step-number">2</div>
                 <div className="step-content">
                   <h3>Contact Us</h3>
-                  <p>Email <a href="mailto:support@razetraining.com">support@razetraining.com</a> with your order number and photos within 7 days of delivery.</p>
+                  <p>Email <a href="mailto:support@apexwrestling.com">support@apexwrestling.com</a> with your order number and photos within 7 days of delivery.</p>
                 </div>
               </div>
               <div className="step">
@@ -127,7 +127,7 @@ const Returns = () => {
               <Mail size={20} />
               <div>
                 <h3>Questions?</h3>
-                <p>Our team is here to help. Email us at <a href="mailto:support@razetraining.com">support@razetraining.com</a> and we'll respond within 24 hours.</p>
+                <p>Our team is here to help. Email us at <a href="mailto:support@apexwrestling.com">support@apexwrestling.com</a> and we'll respond within 24 hours.</p>
               </div>
             </div>
           </section>

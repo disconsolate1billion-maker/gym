@@ -84,7 +84,7 @@ const CompleteProfile = () => {
       }
 
       toast({
-        title: "Welcome to RAZE! 🎉",
+        title: "Welcome to APEX! 🎉",
         description: "Your profile is complete. Check your email for your welcome discount!"
       });
 
@@ -114,7 +114,7 @@ const CompleteProfile = () => {
       <div className="container">
         <div className="complete-profile-container">
           <div className="complete-profile-header">
-            <h1 className="complete-profile-title">Welcome to RAZE!</h1>
+            <h1 className="complete-profile-title">Welcome to APEX!</h1>
             <p className="complete-profile-subtitle">
               Just one more step to personalize your experience
             </p>

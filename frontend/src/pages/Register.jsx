@@ -75,7 +75,7 @@ const Register = () => {
       });
       toast({
         title: "Account created",
-        description: "Welcome to RAZE!"
+        description: "Welcome to APEX!"
       });
       navigate('/dashboard');
     } catch (err) {
@@ -100,7 +100,7 @@ const Register = () => {
         <div className="auth-container">
           <div className="auth-header">
             <h1 className="auth-title">{t('auth.createAccount')}</h1>
-            <p className="auth-subtitle">Join RAZE</p>
+            <p className="auth-subtitle">Join APEX</p>
           </div>
 
           {/* Social Sign Up Buttons */}
@@ -255,7 +255,7 @@ const Register = () => {
           <div className="auth-benefit">
             <p className="benefit-title">What you get:</p>
             <ul className="benefit-list">
-              <li><strong>10 FREE RAZE Credits</strong> just for signing up!</li>
+              <li><strong>10 FREE APEX Credits</strong> just for signing up!</li>
               <li>Earn 1 credit per $1 spent</li>
               <li>Order history and tracking</li>
               <li>Faster checkout</li>

@@ -4,8 +4,8 @@ import { popup } from '../utils/storage';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
-// RAZE Logo URL
-const RAZE_LOGO = '/images/popup_logo_cyan.png';
+// APEX Logo URL
+const APEX_LOGO = '/images/popup_logo_cyan.png';
 
 const EmailPopup = ({ isOpen: externalIsOpen, onClose: externalOnClose }) => {
   const [internalIsOpen, setInternalIsOpen] = useState(false);
@@ -78,7 +78,7 @@ const EmailPopup = ({ isOpen: externalIsOpen, onClose: externalOnClose }) => {
           </button>
           <div className="popup-content popup-success">
             <div className="popup-logo">
-              <img src={RAZE_LOGO} alt="RAZE" className="popup-logo-img" />
+              <img src={APEX_LOGO} alt="APEX" className="popup-logo-img" />
             </div>
             <h2 className="popup-success-title">You Have Early Access!</h2>
             <p className="popup-success-subtitle">
@@ -103,7 +103,7 @@ const EmailPopup = ({ isOpen: externalIsOpen, onClose: externalOnClose }) => {
 
         <div className="popup-content">
           <div className="popup-logo">
-            <img src={RAZE_LOGO} alt="RAZE" className="popup-logo-img" />
+            <img src={APEX_LOGO} alt="APEX" className="popup-logo-img" />
           </div>
           
           <h2 className="popup-title">Get Early Access</h2>
@@ -126,7 +126,7 @@ const EmailPopup = ({ isOpen: externalIsOpen, onClose: externalOnClose }) => {
                 <Coins size={16} />
               </div>
               <div className="benefit-text">
-                <strong>RAZE Credits</strong> — Earn $1 credit for every $1 spent
+                <strong>APEX Credits</strong> — Earn $1 credit for every $1 spent
               </div>
             </div>
             
@@ -149,11 +149,11 @@ const EmailPopup = ({ isOpen: externalIsOpen, onClose: externalOnClose }) => {
             </div>
           </div>
           
-          {/* RAZE Credits highlight */}
+          {/* APEX Credits highlight */}
           <div className="credits-highlight">
             <div className="credits-highlight-header">
               <Coins size={14} className="credits-icon" />
-              <span>RAZE CREDITS</span>
+              <span>APEX CREDITS</span>
             </div>
             <p className="credits-highlight-text">
               Redeem credits: <strong>100 = $5</strong>, <strong>200 = $15</strong>, <strong>300 = $25 off</strong>

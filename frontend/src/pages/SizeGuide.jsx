@@ -577,7 +577,7 @@ const SizeGuide = () => {
             <div className="tip-card">
               <div className="tip-icon">📧</div>
               <h3>Still Unsure?</h3>
-              <p>Email us at <a href="mailto:support@razetraining.com">support@razetraining.com</a> — we'll help you find your size.</p>
+              <p>Email us at <a href="mailto:support@apexwrestling.com">support@apexwrestling.com</a> — we'll help you find your size.</p>
             </div>
           </div>
         </section>

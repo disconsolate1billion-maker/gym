@@ -19,7 +19,7 @@ const Privacy = () => {
           <section className="policy-section">
             <h2>Information We Collect</h2>
             <p>
-              At RAZE, we collect information you provide directly to us when you create an account, 
+              At APEX, we collect information you provide directly to us when you create an account, 
               make a purchase, subscribe to our newsletter, or contact us for support. This includes 
               your name, email address, shipping address, and payment information.
             </p>
@@ -69,7 +69,7 @@ const Privacy = () => {
               We retain your personal information for as long as necessary to fulfill the purposes 
               outlined in this policy, unless a longer retention period is required by law. You have 
               the right to access, correct, or delete your personal information at any time by 
-              contacting us at privacy@razetraining.com.
+              contacting us at privacy@apexwrestling.com.
             </p>
             <p>
               If you're located in the EU, you have additional rights under GDPR, including the right 

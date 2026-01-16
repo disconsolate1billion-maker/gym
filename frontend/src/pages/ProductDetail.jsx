@@ -254,7 +254,7 @@ const ProductDetail = () => {
                 ) : (
                   <>
                     <li>Technical fabric designed for training</li>
-                    <li>Minimal RAZE branding with {product.logo} logo</li>
+                    <li>Minimal APEX branding with {product.logo} logo</li>
                     <li>Built for movement and flexibility</li>
                     <li>Machine washable</li>
                     <li>Worldwide shipping available</li>

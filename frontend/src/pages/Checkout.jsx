@@ -29,7 +29,7 @@ const Checkout = () => {
   useEffect(() => {
     // Try to load from localStorage if context is empty
     if (cart.length === 0) {
-      const savedCart = localStorage.getItem('raze_cart');
+      const savedCart = localStorage.getItem('apex_cart');
       if (savedCart) {
         try {
           const parsedCart = JSON.parse(savedCart);
@@ -228,7 +228,7 @@ const Checkout = () => {
 
       if (data.success && data.checkout_url) {
         // Store session info for later retrieval
-        localStorage.setItem('raze_checkout_session', data.session_id);
+        localStorage.setItem('apex_checkout_session', data.session_id);
         // Redirect to Stripe Checkout
         window.location.href = data.checkout_url;
       } else {

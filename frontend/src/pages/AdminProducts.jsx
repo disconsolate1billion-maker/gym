@@ -14,7 +14,7 @@ const adminProducts = [
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
     stock: 150,
     status: 'Active',
-    sku: 'RAZE-PCT-001'
+    sku: 'APEX-PCT-001'
   },
   {
     id: 'sale-002',
@@ -26,7 +26,7 @@ const adminProducts = [
     sizes: ['S', 'M', 'L', 'XL'],
     stock: 120,
     status: 'Active',
-    sku: 'RAZE-PTT-002'
+    sku: 'APEX-PTT-002'
   },
   {
     id: 'sale-003',
@@ -38,7 +38,7 @@ const adminProducts = [
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     stock: 200,
     status: 'Active',
-    sku: 'RAZE-EFS-003'
+    sku: 'APEX-EFS-003'
   },
   {
     id: 'sale-004',
@@ -50,7 +50,7 @@ const adminProducts = [
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
     stock: 85,
     status: 'Active',
-    sku: 'RAZE-TLS-004'
+    sku: 'APEX-TLS-004'
   },
   {
     id: 'sale-005',
@@ -62,7 +62,7 @@ const adminProducts = [
     sizes: ['S', 'M', 'L', 'XL'],
     stock: 75,
     status: 'Active',
-    sku: 'RAZE-CS-005'
+    sku: 'APEX-CS-005'
   }
 ];
 

@@ -66,7 +66,7 @@ const Unsubscribe = () => {
             <p>{message}</p>
             <p className="unsubscribe-email">{email}</p>
             <div className="unsubscribe-note">
-              <p>You will no longer receive marketing emails from RAZE.</p>
+              <p>You will no longer receive marketing emails from APEX.</p>
               <p>Changed your mind? You can always re-subscribe by creating an account.</p>
             </div>
           </div>
@@ -81,7 +81,7 @@ const Unsubscribe = () => {
             <p>{message}</p>
             <p className="unsubscribe-email">{email}</p>
             <p className="unsubscribe-note">
-              Please contact <a href="mailto:support@razetraining.com">support@razetraining.com</a> for assistance.
+              Please contact <a href="mailto:support@apexwrestling.com">support@apexwrestling.com</a> for assistance.
             </p>
           </div>
         )}
@@ -101,7 +101,7 @@ const Unsubscribe = () => {
 
         <Link to="/" className="unsubscribe-back">
           <ArrowLeft size={18} />
-          Back to RAZE
+          Back to APEX
         </Link>
       </div>
     </div>

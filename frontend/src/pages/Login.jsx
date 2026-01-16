@@ -75,7 +75,7 @@ const Login = () => {
         <div className="auth-container">
           <div className="auth-header">
             <h1 className="auth-title">{t('auth.signIn')}</h1>
-            <p className="auth-subtitle">Welcome back to RAZE</p>
+            <p className="auth-subtitle">Welcome back to APEX</p>
           </div>
 
           {/* Social Login Buttons */}
@@ -151,7 +151,7 @@ const Login = () => {
           <div className="auth-benefit">
             <p className="benefit-title">Account benefits:</p>
             <ul className="benefit-list">
-              <li>Earn RAZE Credits on every purchase</li>
+              <li>Earn APEX Credits on every purchase</li>
               <li>Order history and tracking</li>
               <li>Faster checkout</li>
               <li>Early access to drops</li>

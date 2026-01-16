@@ -180,11 +180,11 @@ const Dashboard = () => {
           </div>
         )}
 
-        {/* RAZE Credits Section */}
+        {/* APEX Credits Section */}
         <div className="credits-section">
           <div className="credits-header">
             <Award size={24} />
-            <h2>RAZE Credits</h2>
+            <h2>APEX Credits</h2>
           </div>
           
           {creditsLoading ? (

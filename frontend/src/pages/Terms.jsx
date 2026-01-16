@@ -17,14 +17,14 @@ const Terms = () => {
 
         <div className="policy-content">
           <section className="policy-section">
-            <h2>Welcome to RAZE</h2>
+            <h2>Welcome to APEX</h2>
             <p>
-              These Terms of Service govern your use of the RAZE website and your purchase of products 
+              These Terms of Service govern your use of the APEX website and your purchase of products 
               from our online store. By accessing our website or placing an order, you agree to be bound 
               by these terms. Please read them carefully before making a purchase.
             </p>
             <p>
-              RAZE reserves the right to update these terms at any time. Changes will be posted on this 
+              APEX reserves the right to update these terms at any time. Changes will be posted on this 
               page with an updated revision date. Your continued use of the website after any changes 
               indicates your acceptance of the new terms.
             </p>
@@ -54,7 +54,7 @@ const Terms = () => {
             </div>
             <p>
               All content on this website, including text, graphics, logos, images, and software, is the 
-              property of RAZE or its content suppliers and is protected by international copyright laws. 
+              property of APEX or its content suppliers and is protected by international copyright laws. 
               You may not reproduce, distribute, or create derivative works from any content without our 
               express written permission.
             </p>
@@ -66,7 +66,7 @@ const Terms = () => {
               <h2>Limitation of Liability</h2>
             </div>
             <p>
-              RAZE shall not be liable for any indirect, incidental, special, or consequential damages 
+              APEX shall not be liable for any indirect, incidental, special, or consequential damages 
               arising from your use of our website or products. Our total liability for any claim arising 
               from a purchase shall not exceed the amount you paid for that product.
             </p>

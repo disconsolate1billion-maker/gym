@@ -42,7 +42,7 @@ const CheckoutSuccess = () => {
             // Clear cart after successful payment
             clearCart();
             // Clear checkout session from localStorage
-            localStorage.removeItem('raze_checkout_session');
+            localStorage.removeItem('apex_checkout_session');
           } else if (data.success) {
             // Payment still pending or not completed
             setError('Payment is still processing. Please check back later.');

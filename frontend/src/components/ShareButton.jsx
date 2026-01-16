@@ -41,7 +41,7 @@ const ShareButton = ({ product, variant = "icon" }) => {
     ? `${window.location.origin}/products/${product.id}` 
     : '';
   
-  const shareText = `Check out this ${product.name} - ${product.variant} from RAZE!`;
+  const shareText = `Check out this ${product.name} - ${product.variant} from APEX!`;
 
   const shareLinks = {
     twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(productUrl)}`,

@@ -108,7 +108,7 @@ const OrderTracking = () => {
                   type="text"
                   value={orderNumber}
                   onChange={(e) => setOrderNumber(e.target.value.toUpperCase())}
-                  placeholder="e.g., RAZE-D2336D48"
+                  placeholder="e.g., APEX-D2336D48"
                   className="form-input"
                 />
               </div>
@@ -286,7 +286,7 @@ const OrderTracking = () => {
         <div className="tracking-help">
           <h3>Need Help?</h3>
           <p>Can't find your order? Check your confirmation email for the order number, or <Link to="/faq">visit our FAQ</Link>.</p>
-          <p>For further assistance, contact us at <a href="mailto:support@razetraining.com">support@razetraining.com</a></p>
+          <p>For further assistance, contact us at <a href="mailto:support@apexwrestling.com">support@apexwrestling.com</a></p>
         </div>
       </div>
     </div>

@@ -122,7 +122,7 @@ const FAQ = () => {
       <div className="container">
         <div className="faq-header">
           <h1>Frequently Asked Questions</h1>
-          <p>Everything you need to know about RAZE products and ordering.</p>
+          <p>Everything you need to know about APEX products and ordering.</p>
         </div>
 
         <div className="faq-content">
@@ -141,7 +141,7 @@ const FAQ = () => {
         <div className="faq-contact">
           <h3>Still have questions?</h3>
           <p>Can't find what you're looking for? Reach out to our support team.</p>
-          <a href="mailto:support@razetraining.com" className="faq-contact-btn">
+          <a href="mailto:support@apexwrestling.com" className="faq-contact-btn">
             Contact Support
           </a>
         </div>

@@ -1,84 +1,86 @@
 import React, { useState, useEffect } from 'react';
-import { Star, Tag, Bell } from 'lucide-react';
+import { Star, Tag, Bell, ShoppingCart } from 'lucide-react';
+import { useCart } from '../context/CartContext';
 import WaitlistModal from '../components/WaitlistModal';
 
-// 11.11 Sale Products Collection
+// Championship Sale Products Collection
 const saleProducts = [
   {
     id: 'sale-001',
-    name: 'Performance Compression Tee',
-    category: '11.11 Sale',
-    originalPrice: 79.99,
-    salePrice: 39.99,
-    discount: 50,
-    image: '/images/products/front_shirt_black_cyan.png',
+    name: 'Compression Shirt',
+    category: 'Championship Sale',
+    originalPrice: 75,
+    salePrice: 45,
+    discount: 40,
+    image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80',
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
     rating: 4.9,
-    reviews: 89,
-    description: 'High-performance compression fit for maximum support.',
-    variant: 'Black / Cyan'
+    reviews: 892,
+    description: 'Battle-tested compression shirt built for intense mat sessions.',
+    variant: 'Black / Red'
   },
   {
     id: 'sale-002',
-    name: 'Pro Training Tank',
-    category: '11.11 Sale',
-    originalPrice: 59.99,
-    salePrice: 29.99,
-    discount: 50,
-    image: '/images/products/front_shirt_grey_cyan.png',
-    sizes: ['S', 'M', 'L', 'XL'],
+    name: 'Compression Shirt',
+    category: 'Championship Sale',
+    originalPrice: 75,
+    salePrice: 45,
+    discount: 40,
+    image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&q=80',
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
     rating: 4.8,
-    reviews: 64,
-    description: 'Lightweight tank for intense training sessions.',
-    variant: 'Grey / Cyan'
+    reviews: 654,
+    description: 'Elite compression gear for champion wrestlers.',
+    variant: 'Black / Gold'
   },
   {
     id: 'sale-003',
-    name: 'Elite Flex Shorts',
-    category: '11.11 Sale',
-    originalPrice: 69.99,
-    salePrice: 34.99,
-    discount: 50,
-    image: '/images/products/front_shorts_black_cyan.png',
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    name: 'Wrestling Shorts',
+    category: 'Championship Sale',
+    originalPrice: 85,
+    salePrice: 49,
+    discount: 42,
+    image: 'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=600&q=80',
+    sizes: ['S', 'M', 'L', 'XL'],
     rating: 4.9,
-    reviews: 112,
-    description: 'Maximum flexibility with secure fit.',
-    variant: 'Black / Cyan'
+    reviews: 567,
+    description: 'Competition-grade shorts with maximum grip resistance.',
+    variant: 'Black / Red'
   },
   {
     id: 'sale-004',
-    name: 'Training Long Sleeve',
-    category: '11.11 Sale',
-    originalPrice: 89.99,
-    salePrice: 44.99,
-    discount: 50,
-    image: '/images/products/front_shirt_grey_white.png',
-    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    name: 'Wrestling Shorts',
+    category: 'Championship Sale',
+    originalPrice: 85,
+    salePrice: 49,
+    discount: 42,
+    image: 'https://images.unsplash.com/photo-1562771379-eafdca7a02f8?w=600&q=80',
+    sizes: ['S', 'M', 'L', 'XL'],
     rating: 4.7,
-    reviews: 45,
-    description: 'Full coverage for cooler training sessions.',
-    variant: 'Grey / White'
+    reviews: 234,
+    description: 'Premium wrestling shorts designed for elite performance.',
+    variant: 'Black / Gold'
   },
   {
     id: 'sale-005',
-    name: 'Competition Singlet',
-    category: '11.11 Sale',
-    originalPrice: 99.99,
-    salePrice: 49.99,
+    name: 'APEX Training Set',
+    category: 'Championship Sale',
+    originalPrice: 160,
+    salePrice: 79,
     discount: 50,
-    image: '/images/products/front_shirt_black_silver.png',
+    image: 'https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=600&q=80',
     sizes: ['S', 'M', 'L', 'XL'],
     rating: 5.0,
-    reviews: 78,
-    description: 'Competition-grade singlet for peak performance.',
-    variant: 'Black / Silver'
+    reviews: 312,
+    description: 'Complete training set: Compression Shirt + Wrestling Shorts bundle.',
+    variant: 'Red / Black'
   }
 ];
 
 const SalePage = () => {
   const [selectedSizes, setSelectedSizes] = useState({});
   const [waitlistModal, setWaitlistModal] = useState({ isOpen: false, product: null });
+  const { addToCart } = useCart();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -91,6 +93,20 @@ const SalePage = () => {
     }));
   };
 
+  const handleAddToCart = (product) => {
+    const selectedSize = selectedSizes[product.id] || product.sizes[0];
+    addToCart({
+      id: product.id,
+      name: product.name,
+      variant: product.variant,
+      price: product.salePrice,
+      originalPrice: product.originalPrice,
+      size: selectedSize,
+      image: product.image,
+      quantity: 1
+    });
+  };
+
   const handleJoinWaitlist = (product) => {
     const selectedSize = selectedSizes[product.id] || product.sizes[0];
     setWaitlistModal({ 
@@ -98,52 +114,45 @@ const SalePage = () => {
       product: {
         ...product,
         price: product.salePrice,
-        selectedSize: selectedSize
+        selectedSize
       }
     });
   };
 
   return (
     <div className="sale-page">
-      {/* Sale Hero Banner */}
-      <section className="sale-hero">
-        <div className="sale-hero-content">
-          <div className="sale-badge-large">
-            <Tag size={32} />
-            <span>11.11 SALE</span>
-          </div>
-          <h1 className="sale-title">11.11 SALE</h1>
-          <p className="sale-subtitle">Biggest Sale of the Year</p>
-          <p className="sale-description">Up to 50% off on selected performance wear</p>
-          <div className="sale-countdown">
-            <span className="countdown-label">Limited Time Only</span>
+      <div className="sale-page-container">
+        {/* Hero Banner */}
+        <div className="sale-hero">
+          <div className="sale-hero-content">
+            <span className="sale-badge">
+              <Tag size={16} />
+              UP TO 50% OFF
+            </span>
+            <h1 className="sale-hero-title">Championship Sale</h1>
+            <p className="sale-hero-subtitle">
+              Train like a champion. Limited time pricing on elite compression gear.
+            </p>
           </div>
         </div>
-      </section>
 
-      {/* Sale Products Grid */}
-      <section className="sale-products-section">
-        <div className="container">
-          <div className="sale-products-header">
-            <h2 className="sale-products-title">Sale Collection</h2>
-            <p className="sale-products-count">{saleProducts.length} Products</p>
-          </div>
-
+        {/* Products Grid */}
+        <div className="sale-products-section">
           <div className="sale-products-grid">
             {saleProducts.map((product) => (
               <div key={product.id} className="sale-product-card" data-testid={`sale-product-${product.id}`}>
-                {/* Sale Badge */}
-                <div className="sale-product-badge">
-                  <Tag size={12} />
-                  <span>11.11 SALE</span>
+                {/* Discount Badge */}
+                <div className="sale-discount-badge">
+                  -{product.discount}%
                 </div>
 
-                {/* Discount Badge */}
-                <div className="discount-badge">-{product.discount}%</div>
-
                 {/* Product Image */}
-                <div className="sale-product-image">
-                  <img src={product.image} alt={product.name} />
+                <div className="sale-product-image-wrapper">
+                  <img 
+                    src={product.image} 
+                    alt={product.name}
+                    className="sale-product-image"
+                  />
                 </div>
 
                 {/* Product Info */}
@@ -153,72 +162,76 @@ const SalePage = () => {
                   
                   {/* Rating */}
                   <div className="sale-product-rating">
-                    <div className="stars">
-                      {[...Array(5)].map((_, i) => (
-                        <Star 
-                          key={i} 
-                          size={14} 
-                          fill={i < Math.floor(product.rating) ? '#F59E0B' : 'none'}
-                          color="#F59E0B"
-                        />
-                      ))}
-                    </div>
-                    <span className="rating-text">{product.rating} ({product.reviews})</span>
+                    <Star size={14} fill="#D4AF37" color="#D4AF37" />
+                    <span className="rating-value">{product.rating}</span>
+                    <span className="rating-count">({product.reviews})</span>
                   </div>
 
                   {/* Pricing */}
                   <div className="sale-product-pricing">
-                    <span className="original-price">${product.originalPrice.toFixed(2)}</span>
-                    <span className="sale-price">${product.salePrice.toFixed(2)}</span>
+                    <span className="sale-price">${product.salePrice}</span>
+                    <span className="original-price">${product.originalPrice}</span>
                   </div>
 
                   {/* Size Selection */}
-                  <div className="sale-product-sizes">
-                    <span className="sizes-label">Size:</span>
-                    <div className="sizes-row">
-                      {product.sizes.map((size) => (
-                        <button
-                          key={size}
-                          className={`size-btn ${selectedSizes[product.id] === size ? 'selected' : ''}`}
-                          onClick={() => handleSizeSelect(product.id, size)}
-                        >
-                          {size}
-                        </button>
-                      ))}
-                    </div>
+                  <div className="sale-size-selector">
+                    {product.sizes.map((size) => (
+                      <button
+                        key={size}
+                        className={`sale-size-btn ${selectedSizes[product.id] === size ? 'selected' : ''}`}
+                        onClick={() => handleSizeSelect(product.id, size)}
+                      >
+                        {size}
+                      </button>
+                    ))}
                   </div>
 
-                  {/* Join Waitlist Button */}
+                  {/* Add to Cart Button */}
                   <button 
                     className="sale-add-to-cart-btn"
-                    onClick={() => handleJoinWaitlist(product)}
-                    data-testid={`join-waitlist-${product.id}`}
+                    onClick={() => handleAddToCart(product)}
+                    data-testid={`add-to-cart-${product.id}`}
                   >
-                    <Bell size={18} />
-                    Join Waitlist
+                    <ShoppingCart size={16} />
+                    Add to Cart
+                  </button>
+
+                  {/* Notify Me Link */}
+                  <button 
+                    className="sale-notify-btn"
+                    onClick={() => handleJoinWaitlist(product)}
+                  >
+                    <Bell size={14} />
+                    Notify when back in stock
                   </button>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </section>
 
-      {/* Sale Terms */}
-      <section className="sale-terms">
-        <div className="container">
-          <p className="terms-text">
-            *Sale prices valid while stocks last. Cannot be combined with other offers.
-          </p>
+        {/* Trust Section */}
+        <div className="sale-trust-section">
+          <div className="sale-trust-item">
+            <span className="trust-icon">🏆</span>
+            <span>Championship Quality</span>
+          </div>
+          <div className="sale-trust-item">
+            <span className="trust-icon">🚚</span>
+            <span>Free Shipping Over $100</span>
+          </div>
+          <div className="sale-trust-item">
+            <span className="trust-icon">↩️</span>
+            <span>30-Day Returns</span>
+          </div>
         </div>
-      </section>
+      </div>
 
       {/* Waitlist Modal */}
       <WaitlistModal
         isOpen={waitlistModal.isOpen}
         onClose={() => setWaitlistModal({ isOpen: false, product: null })}
         product={waitlistModal.product}
-        initialSize={waitlistModal.product?.selectedSize}
       />
     </div>
   );

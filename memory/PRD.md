@@ -1,12 +1,25 @@
-# RAZE Training - Product Requirements Document
+# APEX Wrestling - Product Requirements Document
 
 ## Original Problem Statement
-Restore and enhance the RAZE Training e-commerce application from the user's GitHub backup. The app is a minimalist performance training wear brand for gymnasts.
+Rebrand the RAZE Training e-commerce template to APEX Wrestling - an elite compression gear brand for wrestlers and combat athletes.
 
 ## User Personas
-- **Primary**: Gymnasts (MAG/WAG/Other) looking for high-quality training apparel
-- **Secondary**: Coaches, parents, and general fitness enthusiasts
+- **Primary**: Wrestlers (Folkstyle, Freestyle, Greco-Roman) looking for high-quality compression gear
+- **Secondary**: Combat athletes (BJJ, MMA, Judo), coaches, and wrestling enthusiasts
 - **Global Audience**: International customers in 10+ language markets
+
+## Brand Identity
+
+### Brand Name: APEX
+### Tagline: "Forged in the Fire"
+### Colors:
+- Primary: Deep Red (#DC2626)
+- Secondary: Gold (#D4AF37)
+- Background: Black (#000000)
+- Accent: Gold for highlights
+
+### Brand Story
+APEX was created by former NCAA wrestlers who got tired of compression gear that rides up, loses grip, or falls apart after one season. We build battle-tested gear that performs under pressure — from practice to championship matches.
 
 ## Core Requirements
 
@@ -18,28 +31,24 @@ Restore and enhance the RAZE Training e-commerce application from the user's Git
 - Waitlist functionality for upcoming products
 - Admin dashboard for order management
 - n8n webhook integrations for email automation
-- Compressed WebP product images (~100KB each)
-- "Sold count" display on products
-- Hero section with Front/Back product toggle
-- Skeleton loading for images
+- Multi-language support (10 languages)
+- Currency localization
 
-### Multi-Language Support (Completed January 2025)
-- **10 Languages Supported**: English, Spanish, French, German, Portuguese, Italian, Japanese, Chinese (Simplified), Korean, Dutch
-- **Auto-Detection**: Uses browser language preference
-- **Persistence**: Language choice saved to localStorage and cookies
-- **Manual Selection**: Language selector dropdown in header
-- **Coverage**: Header, Footer, Hero, TrustBar, Newsletter, Cart, Auth pages, Product cards, Popups
+### Products
+1. **Compression Shirts** - 4 variants
+   - Black / Red (Most Popular)
+   - Black / Gold
+   - Red / Black
+   - White / Red
 
-### Currency Localization (Completed January 2025)
-- **Region-Specific Currencies**:
-  - USD ($) - English
-  - EUR (€) - Spanish, French, German, Portuguese, Italian, Dutch
-  - JPY (¥) - Japanese
-  - CNY (¥) - Chinese
-  - KRW (₩) - Korean
-- **Exchange Rate Conversion**: Automatic conversion from USD base prices
-- **Proper Formatting**: Symbol positioning (before/after), decimal handling
-- **Coverage**: Product cards, Cart, Checkout, Bundle banners
+2. **Wrestling Shorts** - 2 variants
+   - Black / Red (Most Popular)
+   - Black / Gold
+
+### Pricing
+- Compression Shirt: $55 (was $75)
+- Wrestling Shorts: $65 (was $85)
+- Training Set Bundle: $89 (Shirt + Shorts, save $31)
 
 ## Architecture
 
@@ -58,7 +67,7 @@ Restore and enhance the RAZE Training e-commerce application from the user's Git
 │   │   ├── utils/       # Utility functions (currency.js, etc.)
 │   │   ├── i18n.js      # i18next configuration
 │   │   └── App.js       # Main React app
-│   └── public/images/   # Local compressed product images
+│   └── public/          # Static assets
 └── memory/            # Project documentation
 ```
 
@@ -66,9 +75,22 @@ Restore and enhance the RAZE Training e-commerce application from the user's Git
 - **Backend**: FastAPI, Python, Motor (MongoDB async driver)
 - **Frontend**: React, react-router-dom, react-i18next
 - **Database**: MongoDB
-- **Styling**: CSS with custom design system
+- **Styling**: CSS with custom design system (red/gold theme)
 - **i18n**: i18next with browser language detection
-- **Build**: craco (with CSS minification disabled)
+
+## Features
+
+### Battle-Tested Durability
+Reinforced seams and abrasion-resistant fabric built to survive thousands of hours on the mat.
+
+### Competition Cut
+Streamlined fit that stays in place during takedowns, scrambles, and intense grappling sessions.
+
+### Wrestling Heritage
+Designed by former NCAA wrestlers who understand the demands of the sport at every level.
+
+### Weight-Cut Ready
+Moisture-wicking technology that helps you maintain focus and performance during intense training.
 
 ## API Endpoints
 - `POST /api/auth/register` - User registration
@@ -78,35 +100,12 @@ Restore and enhance the RAZE Training e-commerce application from the user's Git
 - `POST /api/webhook/*` - n8n webhook triggers
 - `POST /api/checkout/create-session` - Stripe checkout (needs API key)
 
-## Known Configurations
-- **CORS**: Must use specific origins (not wildcard) due to credentials
-- **CSS Minification**: Disabled in craco.config.js (temporary workaround)
-- **Images**: All product images are local WebP files in `/app/frontend/public/images/`
-
-## Upcoming Tasks (P1)
-1. **Stripe Integration**: Add Stripe API key for checkout functionality
-2. **Google OAuth gymnastics_type Gap**: Collect this info from first-time Google users
-
-## Future Tasks (P2+)
-1. Re-enable CSS minification with proper fix (e.g., lightningcss)
-2. Product descriptions translation
-3. Admin dashboard translation
-
 ## Recent Updates
 
-### January 10, 2025 - Session 2
-- **Black/Silver Shirt Images**: Updated product images (front_shirt_black_silver.png, back_shirt_black_silver.png)
-- **Black/Cyan Shirt Images**: Updated product images 
-- **Admin Dashboard**: Streamlined access - now available only via profile menu for logged-in admin users
-- **Public Stats API**: New endpoint `GET /api/stats` for public metrics
-- **"Spots Left" Logic**: Dynamic waitlist spots (65-89 range, decreases by 2 after 2hr interval)
-- **Signup Bug Fix**: Fixed age field data type in registration flow
-- **Webhook Improvements**: 
-  - All image URLs now use production domain (https://razetraining.com)
-  - Corrected payload fields (athlete_image, product_image)
-  - Drop date set to "Feb 20"
-- **UI Fixes**: Payment icons in footer, popup logo positioning
-
-### January 7, 2025 - Session 1
-- Added currency localization with region-specific currencies (USD, EUR, JPY, CNY, KRW)
-- Multi-language support (10 languages)
+### January 2025 - Brand Transformation
+- Rebranded from RAZE Training (gymnastics) to APEX Wrestling (combat sports)
+- Updated color scheme: Cyan → Red/Gold
+- New product lineup: Compression shirts and wrestling shorts
+- Updated copy and messaging for wrestling/combat sports audience
+- New hero imagery featuring wrestlers and combat athletes
+- Updated About section with wrestling-focused story

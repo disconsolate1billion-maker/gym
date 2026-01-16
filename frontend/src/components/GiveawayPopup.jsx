@@ -146,17 +146,13 @@ const GiveawayPopup = () => {
             </div>
 
             <div className="giveaway-logo">
-              <img 
-                src={RAZE_LOGO} 
-                alt="RAZE" 
-                className="giveaway-logo-img"
-              />
+              <span className="giveaway-logo-text">APEX</span>
             </div>
             <h2 className="giveaway-title">
               {t('popup.giveaway.title')}
             </h2>
             <p className="giveaway-choice-line">
-              <span className="giveaway-highlight">(Shirt + Shorts)</span> <span className="giveaway-choice-text">OF YOUR CHOICE</span>
+              <span className="giveaway-highlight">(Compression Shirt + Shorts)</span> <span className="giveaway-choice-text">OF YOUR CHOICE</span>
             </p>
 
             <form onSubmit={handleSubmit} className="giveaway-form">
@@ -185,7 +181,7 @@ const GiveawayPopup = () => {
               <ul className="benefits-list">
                 <li>
                   <span className="check">✓</span>
-                  Complete RAZE Performance Set (shirt + shorts of your choice)
+                  Complete APEX Training Set (compression shirt + shorts of your choice)
                 </li>
                 <li>
                   <span className="check">✓</span>
@@ -197,7 +193,7 @@ const GiveawayPopup = () => {
                 </li>
                 <li>
                   <span className="check">✓</span>
-                  Exclusive training tips & discipline content
+                  Exclusive wrestling tips & training content
                 </li>
               </ul>
             </div>
@@ -207,11 +203,7 @@ const GiveawayPopup = () => {
         ) : (
           <div className="giveaway-content giveaway-success">
             <div className="giveaway-logo success-logo">
-              <img 
-                src={RAZE_LOGO} 
-                alt="RAZE" 
-                className="giveaway-logo-img"
-              />
+              <span className="giveaway-logo-text">APEX</span>
             </div>
             <h2 className="giveaway-title">You're In The Giveaway!</h2>
             <p className="giveaway-subtitle">

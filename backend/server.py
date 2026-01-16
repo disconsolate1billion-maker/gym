@@ -65,10 +65,10 @@ WEBHOOK_ABANDONED_CART_1 = os.environ.get('WEBHOOK_ABANDONED_CART_1', 'https://r
 WEBHOOK_ABANDONED_CART_2 = os.environ.get('WEBHOOK_ABANDONED_CART_2', 'https://raze11.app.n8n.cloud/webhook/raze-abandoned-cart-2')
 WEBHOOK_ABANDONED_CART_3 = os.environ.get('WEBHOOK_ABANDONED_CART_3', 'https://raze11.app.n8n.cloud/webhook/raze-abandoned-cart-3')
 
-# Default sender address for RAZE (US address for Shippo test mode)
+# Default sender address for APEX (US address for Shippo test mode)
 # Update this to your actual warehouse address in production
-RAZE_ADDRESS = {
-    "name": "RAZE Training",
+APEX_ADDRESS = {
+    "name": "APEX Training",
     "street1": "965 Mission St",
     "city": "San Francisco",
     "state": "CA",
@@ -147,7 +147,7 @@ class ShippingAddress(BaseModel):
 class Order(BaseModel):
     model_config = ConfigDict(extra="ignore")
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
-    order_number: str = Field(default_factory=lambda: f"RAZE-{str(uuid.uuid4())[:8].upper()}")
+    order_number: str = Field(default_factory=lambda: f"APEX-{str(uuid.uuid4())[:8].upper()}")
     items: List[OrderItem]
     shipping: ShippingAddress
     subtotal: float
@@ -430,7 +430,7 @@ class UserResponse(BaseModel):
     needs_profile_completion: bool = False  # True if Google OAuth user without gymnastics_type
 
 
-# RAZE Credits Redemption Tiers
+# APEX Credits Redemption Tiers
 CREDIT_TIERS = [
     {"credits": 100, "discount": 5.00, "label": "$5 off"},
     {"credits": 200, "discount": 15.00, "label": "$15 off"},
@@ -505,7 +505,7 @@ class PromoCodeCreate(BaseModel):
 DEFAULT_PROMO_CODES = [
     {"code": "WELCOME10", "discount_type": "percentage", "discount_value": 10, "min_order": 0, "max_uses": None},
     {"code": "LAUNCH15", "discount_type": "percentage", "discount_value": 15, "min_order": 50, "max_uses": 100},
-    {"code": "RAZE20", "discount_type": "percentage", "discount_value": 20, "min_order": 75, "max_uses": 50},
+    {"code": "APEX20", "discount_type": "percentage", "discount_value": 20, "min_order": 75, "max_uses": 50},
 ]
 
 
@@ -690,9 +690,9 @@ async def send_n8n_giveaway_webhook(email: str, entry_id: str = None):
     PRODUCTION_URL = "https://razetraining.com"
     LOGO_URL = f"{PRODUCTION_URL}/images/logo/raze_logo.png"
     
-    # Generate entry_id if not provided (RAZE-XXXXX format)
+    # Generate entry_id if not provided (APEX-XXXXX format)
     if not entry_id:
-        entry_id = f"RAZE-{uuid.uuid4().hex[:5].upper()}"
+        entry_id = f"APEX-{uuid.uuid4().hex[:5].upper()}"
     
     payload = {
         "email": email,
@@ -912,7 +912,7 @@ async def send_order_confirmation_email(order: dict):
 
 @api_router.get("/")
 async def root():
-    return {"message": "RAZE API"}
+    return {"message": "APEX API"}
 
 @api_router.get("/stats")
 async def get_public_stats():
@@ -1172,7 +1172,7 @@ async def unsubscribe_email(request: Request):
         
         return {
             "success": True,
-            "message": "You've been successfully unsubscribed from RAZE emails.",
+            "message": "You've been successfully unsubscribed from APEX emails.",
             "email": email,
             "records_updated": total_updated
         }
@@ -2082,12 +2082,12 @@ async def use_first_order_discount(request: Request):
 
 
 # ============================================
-# RAZE CREDITS ENDPOINTS
+# APEX CREDITS ENDPOINTS
 # ============================================
 
 @api_router.get("/auth/credits")
 async def get_user_credits(request: Request):
-    """Get user's RAZE credits balance and available redemption tiers"""
+    """Get user's APEX credits balance and available redemption tiers"""
     user = await get_current_user(request)
     
     if not user:
@@ -2119,7 +2119,7 @@ async def get_user_credits(request: Request):
 
 @api_router.post("/auth/credits/redeem")
 async def redeem_credits(request: Request, redemption: CreditRedemptionRequest):
-    """Redeem RAZE credits for a discount code"""
+    """Redeem APEX credits for a discount code"""
     user = await get_current_user(request)
     
     if not user:
@@ -2140,7 +2140,7 @@ async def redeem_credits(request: Request, redemption: CreditRedemptionRequest):
         )
     
     # Generate unique discount code
-    discount_code = f"RAZE{tier['credits']}-{uuid.uuid4().hex[:6].upper()}"
+    discount_code = f"APEX{tier['credits']}-{uuid.uuid4().hex[:6].upper()}"
     
     # Create the promo code in database
     promo = {
@@ -2153,7 +2153,7 @@ async def redeem_credits(request: Request, redemption: CreditRedemptionRequest):
         "is_active": True,
         "created_at": datetime.now(timezone.utc).isoformat(),
         "expires_at": (datetime.now(timezone.utc) + timedelta(days=30)).isoformat(),
-        "description": f"RAZE Credits Redemption - {tier['label']}"
+        "description": f"APEX Credits Redemption - {tier['label']}"
     }
     
     await db.promo_codes.insert_one(promo)
@@ -2745,7 +2745,7 @@ async def update_order(order_id: str, update: OrderUpdate):
         elif update.status == "delivered" and not order.get("delivered_at"):
             update_data["delivered_at"] = datetime.now(timezone.utc).isoformat()
             
-            # Award RAZE credits when order is delivered
+            # Award APEX credits when order is delivered
             # $1 spent = 1 credit (based on order total, rounded down)
             if not order.get("credits_awarded"):
                 order_total = order.get("total", 0)
@@ -2767,7 +2767,7 @@ async def update_order(order_id: str, update: OrderUpdate):
                             }
                         )
                         update_data["credits_awarded"] = credits_to_award
-                        print(f"Awarded {credits_to_award} RAZE credits to {customer_email}")
+                        print(f"Awarded {credits_to_award} APEX credits to {customer_email}")
     
     if update.tracking_number is not None:
         update_data["tracking_number"] = update.tracking_number
@@ -3219,7 +3219,7 @@ async def join_waitlist(entry: WaitlistEntry):
             )
         
         # Generate unique access code for this user
-        access_code = f"RAZE-{secrets.token_hex(4).upper()}"
+        access_code = f"APEX-{secrets.token_hex(4).upper()}"
         position = total_count + 1
         
         # Convert new_sizes to string
@@ -3349,7 +3349,7 @@ async def get_shipping_rates(request: ShippingRateRequest):
         # Create shipment to get rates
         shipment = shippo_client.shipments.create(
             shippo.components.ShipmentCreateRequest(
-                address_from=shippo.components.AddressCreateRequest(**RAZE_ADDRESS),
+                address_from=shippo.components.AddressCreateRequest(**APEX_ADDRESS),
                 address_to=shippo.components.AddressCreateRequest(**address_to),
                 parcels=[shippo.components.ParcelCreateRequest(**parcel)],
                 async_=False
@@ -4803,7 +4803,7 @@ async def test_waitlist_webhook(request: Request):
     }
     
     product_image = variant_images.get(product_variant, "front_shirt_black_cyan.png")
-    access_code = f"RAZE-{uuid.uuid4().hex[:6].upper()}"
+    access_code = f"APEX-{uuid.uuid4().hex[:6].upper()}"
     
     await send_n8n_waitlist_webhook(
         email=email,
@@ -4839,7 +4839,7 @@ async def test_giveaway_webhook(request: Request):
     email = body.get("email", "test@example.com")
     
     # Generate entry_id
-    entry_id = f"RAZE-{uuid.uuid4().hex[:5].upper()}"
+    entry_id = f"APEX-{uuid.uuid4().hex[:5].upper()}"
     
     returned_entry_id = await send_n8n_giveaway_webhook(email=email, entry_id=entry_id)
     
@@ -4858,11 +4858,11 @@ async def test_giveaway_webhook(request: Request):
 async def test_giveaway_winner_webhook(request: Request):
     """
     Test giveaway winner email webhook
-    Body: { "email": "winner@example.com", "entry_id": "RAZE-ABC12", "prize": "Performance T-Shirt Bundle", "winner_name": "John" }
+    Body: { "email": "winner@example.com", "entry_id": "APEX-ABC12", "prize": "Performance T-Shirt Bundle", "winner_name": "John" }
     """
     body = await request.json()
     email = body.get("email", "test@example.com")
-    entry_id = body.get("entry_id", f"RAZE-{uuid.uuid4().hex[:5].upper()}")
+    entry_id = body.get("entry_id", f"APEX-{uuid.uuid4().hex[:5].upper()}")
     prize = body.get("prize", "Performance T-Shirt Bundle")
     winner_name = body.get("winner_name", "Winner")
     
@@ -4897,7 +4897,7 @@ async def admin_select_giveaway_winner(request: Request):
     
     Body: {
         "email": "winner@example.com",
-        "entry_id": "RAZE-ABC12",  # Optional - will lookup if not provided
+        "entry_id": "APEX-ABC12",  # Optional - will lookup if not provided
         "prize": "Performance T-Shirt Bundle",
         "winner_name": "John"  # Optional
     }
@@ -4932,7 +4932,7 @@ async def admin_select_giveaway_winner(request: Request):
     
     # Use entry_id from DB if not provided
     if not entry_id:
-        entry_id = entry.get("entry_id", f"RAZE-{uuid.uuid4().hex[:5].upper()}")
+        entry_id = entry.get("entry_id", f"APEX-{uuid.uuid4().hex[:5].upper()}")
     
     # Mark as winner in database
     await db.email_subscriptions.update_one(
